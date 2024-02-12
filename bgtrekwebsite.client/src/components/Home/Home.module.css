@@ -378,9 +378,7 @@ button {
 }
 */
 
-.heroSection {
-    
-}
+.heroSection {}
 
 .heroText {
     display: flex;
@@ -464,16 +462,27 @@ button {
 }
 
 .heroBackgroundContainer {
+    height: 100%;
+    width: 100%;
     position: relative;
+    overflow: hidden;
 }
 
 .vector4 {
+    width: inherit;
+    height: inherit;
+    position: absolute;
     background: url("/src/assets/images/vectors/Vector\ 4.svg");
+    background-size: cover;
 }
 
 .vector5 {
+    top: 8rem;
+    width: inherit;
+    height: inherit;
     position: absolute;
     background: url("/src/assets/images/vectors/Vector\ 5.svg");
+    background-size: cover;
 }
 
 .contentSection {
@@ -669,19 +678,25 @@ button {
 }
 
 .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     width: 374.227px;
     height: 87.647px;
     margin: 605.86px 0 0 175.887px;
     z-index: 19;
-    overflow: visible auto;
+    background: linear-gradient(90deg, rgba(142, 198, 65, 1) 0%, rgba(65, 198, 134, 1) 100%);
+    border: #244622 solid 6px;
+    border-top-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    filter: drop-shadow(0px 8px 0px #376B34);
 }
 
 .varnaButton {
     position: relative;
     width: 194.598px;
     height: 78.882px;
-    margin: 4.93px 0 0 89.814px;
     cursor: pointer;
     color: #ffffff;
     font-family: Kulim Park, var(--default-font-family);
@@ -702,6 +717,7 @@ button {
     background: url("/src/assets/images/") no-repeat center;
     background-size: cover;
     z-index: 20;
+    filter: drop-shadow(0px 8px 0px #376B34);
 }
 
 .rectangle5 {
@@ -710,7 +726,7 @@ button {
     height: 745px;
     top: 0;
     left: 0;
-    background: url("/src/assets/images/") no-repeat center;
+    background: url("/src/assets/images/backgrounds/TTZ-Varna.jpg") no-repeat center;
     background-size: cover;
     z-index: 18;
     border-radius: 60px 0 60px 0;
@@ -741,6 +757,9 @@ button {
 }
 
 .button7 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
     width: 272.464px;
     height: 66.19px;
@@ -750,17 +769,16 @@ button {
     background: transparent;
     border: none;
     z-index: 25;
-    overflow: visible auto;
+    background: linear-gradient(90deg, rgba(207, 69, 201, 1) 0%, rgba(65, 110, 198, 1) 100%);
+    border: #4D3170 solid 6px;
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    filter: drop-shadow(0px 8px 0px #8B59C7);
 }
 
 .sofiaButton {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: relative;
     width: 231.594px;
-    height: 44.127px;
-    margin: 11.032px 0 0 20.435px;
     color: #ffffff;
     font-family: Kulim Park, var(--default-font-family);
     font-size: 24px;
@@ -787,10 +805,11 @@ button {
     height: 347.5px;
     top: 0;
     left: 0;
-    background: url("/src/assets/images/") no-repeat center;
+    background: url("/src/assets/images/backgrounds/3309_1.jpg") no-repeat center;
     background-size: cover;
     z-index: 24;
     border-radius: 0 40px 0 40px;
+    filter: drop-shadow(0px 8px 0px #8B59C7);
 }
 
 .plovdiv {
@@ -804,6 +823,9 @@ button {
 }
 
 .buttonA {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
     width: 272.464px;
     height: 66.19px;
@@ -813,17 +835,16 @@ button {
     background: transparent;
     border: none;
     z-index: 30;
-    overflow: visible auto;
+    background: linear-gradient(90deg, rgba(207, 69, 201, 1) 0%, rgba(65, 110, 198, 1) 100%);
+    border: #4D3170 solid 6px;
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    filter: drop-shadow(0px 8px 0px #8B59C7);
 }
 
 .plovdivButton {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: relative;
     width: 231.594px;
-    height: 44.127px;
-    margin: 11.032px 0 0 20.435px;
     color: #ffffff;
     font-family: Kulim Park, var(--default-font-family);
     font-size: 24px;
@@ -850,10 +871,11 @@ button {
     height: 347.5px;
     top: 0;
     left: 0;
-    background: url("/src/assets/images/") no-repeat center;
+    background: url("/src/assets/images/backgrounds/IMG_6098-scaled.jpg") no-repeat center;
     background-size: cover;
     z-index: 29;
     border-radius: 0 40px 0 40px;
+    filter: drop-shadow(0px 8px 0px #8B59C7);
 }
 
 .statisticsSection {
@@ -938,14 +960,45 @@ button {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+/*
 .line {
+    background-color: #121B3A;
     flex-shrink: 0;
     position: relative;
     width: 981.333px;
     height: 21.333px;
-    background: url("/src/assets/images/") no-repeat center;
     background-size: cover;
     z-index: 38;
+}
+*/
+
+.line {
+    position: relative;
+    height: 0;
+    width: 60%;
+    border-top: 0.2rem dashed black;
+}
+
+.circle {
+    position: absolute;
+    width: 16px;
+    /* adjust size as needed */
+    height: 16px;
+    /* adjust size as needed */
+    background-color: black;
+    border-radius: 50%;
+    top: -10px;
+    /* adjust position as needed */
+}
+
+.left {
+    left: -6px;
+    /* adjust position as needed */
+}
+
+.right {
+    right: -6px;
+    /* adjust position as needed */
 }
 
 /*

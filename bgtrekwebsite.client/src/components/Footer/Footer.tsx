@@ -9,9 +9,7 @@ export default function Footer() {
       <div className={styles.contactUsBackgroundArt} />
       <div className={styles.footerContactUs}>
         <div className={styles.rectangle1} />
-        <button className={styles.contactUs}>
-          <p>CONTACT US</p>
-        </button>
+        <button className={styles.contactUs}>CONTACT US</button>
         <div className={styles.rectangle2} />
         <div className={styles.contact} />
       </div>

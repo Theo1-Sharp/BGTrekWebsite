@@ -61,8 +61,7 @@ export default function Main() {
         <div className={styles.frame}>
           <div className={styles.varna}>
             <div className={styles.button}>
-              <button className={styles.varnaButton} />
-              <div className={styles.rectangle4} />
+              <button className={styles.varnaButton}>VARNA</button>
             </div>
             <div className={styles.rectangle5} />
           </div>
@@ -70,14 +69,12 @@ export default function Main() {
             <div className={styles.sofia}>
               <button className={styles.button7}>
                 <span className={styles.sofiaButton}>SOFIA</span>
-                <div className={styles.rectangle8} />
               </button>
               <div className={styles.rectangle9} />
             </div>
             <div className={styles.plovdiv}>
               <button className={styles.buttonA}>
                 <span className={styles.plovdivButton}>PLOVDIV</span>
-                <div className={styles.rectangleB} />
               </button>
               <div className={styles.rectangleC} />
             </div>
@@ -102,7 +99,10 @@ export default function Main() {
             USERS
           </span>
         </div>
-        <div className={styles.line} />
+        <div className={styles.line}>
+          <div className={`${styles.circle} ${styles.left}`}></div>
+          <div className={`${styles.circle} ${styles.right}`}></div>
+        </div>
       </div>
       <Footer />
     </div>
