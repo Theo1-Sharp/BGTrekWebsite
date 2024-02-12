@@ -1,0 +1,6 @@
+@BGTrekWebsite.Server_HostAddress = http://localhost:5149
+
+GET {{BGTrekWebsite.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
