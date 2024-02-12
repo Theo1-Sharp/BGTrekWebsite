@@ -1,0 +1,371 @@
+:root {
+  --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+}
+
+.mainContainer {
+  overflow: hidden;
+}
+
+.mainContainer,
+.mainContainer * {
+  box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button {
+  outline: 0;
+}
+
+.mainContainer {
+  position: relative;
+  width: 1440px;
+  height: 99px;
+  margin: 0 auto;
+  border-bottom: 4px solid rgba(0, 255, 227, 0.6);
+}
+
+.navbarBackground {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #121b3a;
+  box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.6);
+}
+
+.homeButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+  position: absolute;
+  width: 240px;
+  height: 96px;
+  top: 0;
+  left: 0;
+  background: linear-gradient(135deg, #035f55, #1b8d51);
+  border: 4px solid #ffffff;
+  z-index: 1;
+  overflow: hidden;
+  box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.5) inset;
+}
+
+.bgTrek {
+  flex-shrink: 0;
+  position: relative;
+  cursor: pointer;
+  font-family: Koulen, var(--default-font-family);
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 87px;
+  background: transparent;
+  border: none;
+  z-index: 2;
+}
+
+.bg {
+  position: relative;
+  color: #f2f0ed;
+  font-family: Koulen, var(--default-font-family);
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 86.719px;
+  text-align: center;
+}
+
+.text2 {
+  position: relative;
+  color: #d4d9e5;
+  font-family: Koulen, var(--default-font-family);
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 86.719px;
+  text-align: center;
+}
+
+.trek {
+  position: relative;
+  color: #f2f0ed;
+  font-family: Koulen, var(--default-font-family);
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 86.719px;
+  text-align: center;
+}
+
+.accountsButtons {
+  position: absolute;
+  width: 15.9%;
+  height: 100%;
+  top: 0;
+  left: 84.1%;
+  z-index: 12;
+}
+
+.rectangle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(85, 53, 53, 0.6);
+  border-left: 4px solid #ffffff;
+  z-index: 13;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 20px;
+  position: absolute;
+  width: 229px;
+  height: 99px;
+  top: 0;
+  left: 0;
+  z-index: 14;
+}
+
+.loginButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  position: relative;
+  width: 78px;
+  padding: 8px 16px 8px 16px;
+  cursor: pointer;
+  background: #278557;
+  border: 3px dashed #ffffff;
+  z-index: 15;
+  border-radius: 10px;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  width: 46px;
+  height: 23px;
+  color: #ffffff;
+  font-family: Kulim Park, var(--default-font-family);
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 23px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 16;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
+}
+
+.signUpButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  position: relative;
+  width: 100px;
+  padding: 8px 16px 8px 16px;
+  cursor: pointer;
+  background: #be3d3d;
+  border: 3px dashed #ffffff;
+  z-index: 17;
+  border-radius: 10px;
+}
+
+.signUp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  width: 68px;
+  height: 23px;
+  color: #ffffff;
+  font-family: Kulim Park, var(--default-font-family);
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 23px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 18;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
+}
+
+.faqCart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 12px;
+  position: absolute;
+  width: 127px;
+  height: 48px;
+  top: 25px;
+  left: 1051px;
+  z-index: 19;
+}
+
+.faq {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  width: 67px;
+  height: 39px;
+  color: #e7e7e7;
+  font-family: Kulim Park, var(--default-font-family);
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 39px;
+  text-align: center;
+  text-decoration: underline;
+  white-space: nowrap;
+  z-index: 20;
+}
+
+.shoppingCart {
+  flex-shrink: 0;
+  position: relative;
+  width: 48px;
+  height: 48px;
+  background: url(../assets/images/93f62db9-fdee-4877-8c53-5b26c9f66b68.png) no-repeat center;
+  background-size: 100% 100%;
+  z-index: 21;
+}
+
+.navigationButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 37px;
+  position: absolute;
+  width: 468.92px;
+  height: 39px;
+  top: 30px;
+  left: 292px;
+  z-index: 3;
+}
+
+.blogButton {
+  flex-shrink: 0;
+  position: relative;
+  width: 49px;
+  height: 37px;
+  z-index: 4;
+}
+
+.blog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 49px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  color: #ffffff;
+  font-family: Josefin Slab, var(--default-font-family);
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 24px;
+  text-align: center;
+  text-transform: capitalize;
+  z-index: 5;
+}
+
+.destinationsButton {
+  flex-shrink: 0;
+  position: relative;
+  width: 133px;
+  height: 37px;
+  z-index: 6;
+}
+
+.destinations {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 133px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  color: #e7e7e7;
+  font-family: Josefin Slab, var(--default-font-family);
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 24px;
+  text-align: center;
+  text-transform: capitalize;
+  z-index: 7;
+}
+
+.storeButton {
+  flex-shrink: 0;
+  position: relative;
+  width: 62.921px;
+  height: 39px;
+  z-index: 8;
+}
+
+.store {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 62.921px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  color: #e7e7e7;
+  font-family: Josefin Slab, var(--default-font-family);
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 24px;
+  text-align: center;
+  z-index: 9;
+}
+
+.aboutUsButton {
+  flex-shrink: 0;
+  position: relative;
+  width: 112.999px;
+  height: 39px;
+  z-index: 10;
+}
+
+.aboutUs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 112.999px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  color: #e7e7e7;
+  font-family: Josefin Slab, var(--default-font-family);
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 24px;
+  text-align: center;
+  z-index: 11;
+}
