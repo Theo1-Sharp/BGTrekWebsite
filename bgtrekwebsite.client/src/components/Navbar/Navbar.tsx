@@ -28,18 +28,10 @@ export default function Navbar() {
         <div className={styles.shoppingCart} />
       </div>
       <div className={styles.navigationButtons}>
-        <div className={styles.blogButton}>
-          <span className={styles.blog}>Blog</span>
-        </div>
-        <div className={styles.destinationsButton}>
-          <span className={styles.destinations}>Destinations</span>
-        </div>
-        <div className={styles.storeButton}>
-          <span className={styles.store}>Store</span>
-        </div>
-        <div className={styles.aboutUsButton}>
-          <span className={styles.aboutUs}>About Us</span>
-        </div>
+        <a className={styles.navbarButton}>Blog</a>
+        <a className={styles.navbarButton}>Destinations</a>
+        <a className={styles.navbarButton}>Store</a>
+        <a className={styles.navbarButton}>About Us</a>
       </div>
     </div>
   );

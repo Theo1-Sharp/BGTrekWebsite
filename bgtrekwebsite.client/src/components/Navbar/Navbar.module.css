@@ -26,7 +26,7 @@ button {
   width: 1440px;
   height: 99px;
   margin: 0 auto;
-  border-bottom: 4px solid rgba(0, 255, 227, 0.6);
+  border-bottom: 4px solid rgba(0, 134, 105, 0.6);
 }
 
 .navbarBackground {
@@ -245,8 +245,10 @@ button {
   position: relative;
   width: 48px;
   height: 48px;
-  background: url(../assets/images/93f62db9-fdee-4877-8c53-5b26c9f66b68.png) no-repeat center;
-  background-size: 100% 100%;
+  background: url("/src/assets/images/icons/shopping-cart-navbar.png") no-repeat center;
+  background-size: 65% 65%;
+  background-color: rgba(57, 157, 107, 0.2);
+  border-radius: 50%;
   z-index: 21;
 }
 
@@ -264,108 +266,12 @@ button {
   z-index: 3;
 }
 
-.blogButton {
-  flex-shrink: 0;
+.navbarButton {
   position: relative;
-  width: 49px;
-  height: 37px;
-  z-index: 4;
-}
-
-.blog {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  width: 49px;
-  height: 100%;
-  top: 0;
-  left: 0;
-  color: #ffffff;
-  font-family: Josefin Slab, var(--default-font-family);
-  font-size: 24px;
-  font-weight: normal;
-  line-height: 24px;
-  text-align: center;
-  text-transform: capitalize;
-  z-index: 5;
-}
-
-.destinationsButton {
-  flex-shrink: 0;
-  position: relative;
-  width: 133px;
-  height: 37px;
   z-index: 6;
-}
-
-.destinations {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  width: 133px;
-  height: 100%;
-  top: 0;
-  left: 0;
   color: #e7e7e7;
   font-family: Josefin Slab, var(--default-font-family);
   font-size: 24px;
   font-weight: normal;
   line-height: 24px;
-  text-align: center;
-  text-transform: capitalize;
-  z-index: 7;
-}
-
-.storeButton {
-  flex-shrink: 0;
-  position: relative;
-  width: 62.921px;
-  height: 39px;
-  z-index: 8;
-}
-
-.store {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  width: 62.921px;
-  height: 100%;
-  top: 0;
-  left: 0;
-  color: #e7e7e7;
-  font-family: Josefin Slab, var(--default-font-family);
-  font-size: 24px;
-  font-weight: normal;
-  line-height: 24px;
-  text-align: center;
-  z-index: 9;
-}
-
-.aboutUsButton {
-  flex-shrink: 0;
-  position: relative;
-  width: 112.999px;
-  height: 39px;
-  z-index: 10;
-}
-
-.aboutUs {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  width: 112.999px;
-  height: 100%;
-  top: 0;
-  left: 0;
-  color: #e7e7e7;
-  font-family: Josefin Slab, var(--default-font-family);
-  font-size: 24px;
-  font-weight: normal;
-  line-height: 24px;
-  text-align: center;
-  z-index: 11;
 }

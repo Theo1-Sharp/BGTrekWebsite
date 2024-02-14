@@ -1,0 +1,12 @@
+.scaleContainer {
+    position: absolute;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.contentPage {
+    position: relative;
+    transform-origin: top left;
+    width: 1440px;
+}
