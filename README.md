@@ -11,6 +11,11 @@ This project uses the following technologies:
 - Front-end: React, Vite, Typescript
 - Back-end: ASP.NET Core, MySQL
 
+## Dependencies
+- React
+  - react-router-dom
+  - react-query
+
 ## TO DO
 
 - Add HTTPS support
