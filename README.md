@@ -23,9 +23,9 @@ This project uses the following technologies:
 
 - Lead Programmer & Co-Designer:
   - Teodor Atanasov
-- Designer & Co-Editor
+- Designer & Co-Editor:
   - Tsvetelina Tsoneva
-- Writer & Editor
+- Writer & Editor:
   - Rashide Selim
 
 ## License
