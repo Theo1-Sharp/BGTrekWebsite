@@ -1,6 +1,6 @@
 # BG-Trek
 
-BG-Trek is a student website that allows users to explore and plan hiking trips in Bulgaria. It features Bulgarian famous landmarks, trail descriptions, comments, and more.
+BG-Trek is a student website that allows users to explore and plan hiking trips in Bulgaria. It features famous Bulgarian landmarks, trail descriptions, comments, and more.
 
 ![303335879-6e984d12-6b17-4e55-88f6-b7adedf4051a](https://github.com/Theo1-Sharp/BGTrekWebsite/assets/141464997/a529177f-ea29-4c5b-8370-4798aae13965)
 
