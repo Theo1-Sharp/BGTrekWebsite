@@ -1,12 +1,13 @@
-import React, { ReactNode, useEffect, useState, useRef } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import styles from "./PageResize.module.css";
 
-export default function Main({ children }: { children: React.ReactNode }) {
+export default function PageResize({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   const scaleRef = useRef<HTMLDivElement | null>(null);
   const contentRef = useRef<HTMLDivElement | null>(null);
-
-  const elements: HTMLCollectionOf<Element> =
-    document.getElementsByClassName("scaleContainer");
 
   const [scaleContainerWidth, setScaleContainerWidth] = useState<number>(
     Number(scaleRef.current?.offsetWidth)
@@ -20,7 +21,6 @@ export default function Main({ children }: { children: React.ReactNode }) {
       const contentWidth: number = Number(contentElement?.offsetWidth);
       const contentHeight: number = Number(contentElement?.offsetHeight);
       const scaleFactor = Number(scaleContainerWidth) / contentWidth;
-      console.log(`${scaleContainerWidth} ` + `${contentWidth}`);
       contentElement.style.transform = `scale(${scaleFactor}) `;
 
       if (scaleElement) {
@@ -28,6 +28,8 @@ export default function Main({ children }: { children: React.ReactNode }) {
       }
     }
   };
+
+  useEffect(() => {});
 
   //Scale page so that it is always visible no matter browser size
   useEffect(() => {
@@ -51,12 +53,6 @@ export default function Main({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     setScaleContainerWidth(Number(scaleRef.current?.offsetWidth));
   }, []);
-
-  const [width, setWidth] = useState(0);
-
-  useEffect(() => {
-    console.log(width);
-  }, [width]);
 
   //Wrapping containers
   return (

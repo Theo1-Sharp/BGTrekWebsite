@@ -1,0 +1,334 @@
+.mainContainer {
+    --images-ruse1: url("/src/assets/images/pages/blogs/iStock-925640756\ RFE\ 1.png");
+    --images-ruse2: url("/src/assets/images/pages/blogs/image\ 12.png");
+    --images-ruse3: url("/src/assets/images/pages/blogs/image\ 13.png");
+    --images-ruse4: url("/src/assets/images/pages/blogs/image\ 14.png");
+    --images-village: url("/src/assets/images/pages/blogs/a-quite-rural-bulgarian-village-vector-art-digital-modern-978165552.png");
+    --images-pattern: url("/src/assets/images/pages/blogs/dots.png");
+    --images-blog: url("/src/assets/images/pages/blogs/vector-illustration-abstract-contemporary-aesthetic-600nw-1854108352.png");
+}
+
+.mainContainer,
+.mainContainer * {
+    box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button {
+    outline: 0;
+}
+
+.mainContainer {
+    position: relative;
+    width: 1440px;
+    margin: 0 auto;
+    background: #f2f0ed;
+}
+
+.aQuiteRuralBulgarianVillageVectorArtDigitalModern {
+    width: 1440px;
+    height: 388px;
+    top: 98px;
+    left: 0;
+    background: var(--images-village) no-repeat center;
+    background-size: cover;
+    z-index: 1;
+}
+
+.blogContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.5));
+    width: 80%;
+    height: 155px;
+    left: 50%;
+    top: 311px;
+    transform: translateX(-50%);
+    z-index: 19;
+    border: solid 3px black;
+    border-radius: 10px;
+    background: linear-gradient(45deg, rgba(17, 153, 142, 0.7) 0%, rgba(56, 239, 125, 0.7) 100%);
+}
+
+.blog18 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 545px;
+    height: 155px;
+    color: #ffffff;
+    font-family: Koulen, var(--default-font-family);
+    font-size: 96px;
+    font-weight: 400;
+    line-height: 155px;
+    text-align: center;
+    text-transform: capitalize;
+    white-space: nowrap;
+    letter-spacing: 24px;
+    z-index: 4;
+}
+
+.rectangle19 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 25%;
+    background: var(--images-blog) no-repeat center;
+    background-size: cover;
+    z-index: 3;
+    border-radius: 10px;
+    box-sizing: content-box;
+}
+
+.rectangle1 {
+    position: relative;
+    width: 1440px;
+    height: 626px;
+    background: #e9d2a6;
+    z-index: 18;
+    margin-top: 140px;
+}
+
+.destination {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    width: 580px;
+    height: 626px;
+    top: 0;
+    left: 113px;
+    font-family: Kulim Park, var(--default-font-family);
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 40.86px;
+    text-align: left;
+    z-index: 19;
+}
+
+.destination2 {
+    position: relative;
+    color: #035f55;
+    font-family: Kulim Park, var(--default-font-family);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 43.2px;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+.destination3 {
+    position: relative;
+    color: #000000;
+    font-family: Kulim Park, var(--default-font-family);
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 40.86px;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+.istockRfe {
+    position: absolute;
+    width: 568px;
+    height: 378px;
+    top: 124px;
+    left: 751px;
+    background: var(--images-ruse1) no-repeat center;
+    background-size: cover;
+    border: #131B3A solid 8px;
+    filter: drop-shadow(30px 30px 0px #685A3F);
+    z-index: 20;
+    border-radius: 40px;
+    box-sizing: content-box;
+}
+
+.frame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 90px;
+    position: relative;
+    width: 1300px;
+    margin: 140px 0 0 57px;
+    z-index: 10;
+}
+
+.frame4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 100px;
+    position: relative;
+    width: 496px;
+    z-index: 11;
+}
+
+.image {
+    flex-shrink: 0;
+    position: relative;
+    width: 496px;
+    height: 305px;
+    background: var(--images-ruse2) no-repeat center;
+    background-size: cover;
+    border: #131B3A solid 8px;
+    filter: drop-shadow(-30px 30px 0px #6C774D);
+    z-index: 12;
+    border-radius: 40px;
+}
+
+.image5 {
+    flex-shrink: 0;
+    position: relative;
+    width: 479px;
+    height: 280px;
+    background: var(--images-ruse3) no-repeat center;
+    background-size: cover;
+    border: #131B3A solid 8px;
+    filter: drop-shadow(-30px 30px 0px #6C774D);
+    z-index: 13;
+    border-radius: 40px;
+    box-sizing: content-box;
+}
+
+.group {
+    flex-shrink: 0;
+    position: relative;
+    width: 714px;
+    height: 626px;
+    z-index: 14;
+}
+
+.rectangle6 {
+    position: absolute;
+    width: 714px;
+    height: 615px;
+    top: 0;
+    left: 0;
+    background-color: #C1CDA1;
+    background-size: cover;
+    z-index: 15;
+}
+
+.destinationPromise {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    width: 580px;
+    height: 626px;
+    top: 0;
+    left: 67px;
+    font-family: Kulim Park, var(--default-font-family);
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 40.86px;
+    text-align: left;
+    z-index: 16;
+}
+
+.destination7 {
+    position: relative;
+    color: #035f55;
+    font-family: Kulim Park, var(--default-font-family);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 43.2px;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+.destinationPromiseText {
+    position: relative;
+    color: #000000;
+    font-family: Kulim Park, var(--default-font-family);
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 40.86px;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+.rectangle8 {
+    position: relative;
+    width: 1440px;
+    height: 626px;
+    margin: 130px 0 0 0;
+    background: #ef9a99;
+    z-index: 6;
+}
+
+.destinationPromise9 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    width: 580px;
+    height: 626px;
+    top: 0;
+    left: 101px;
+    font-family: Kulim Park, var(--default-font-family);
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 40.86px;
+    text-align: left;
+    z-index: 7;
+}
+
+.destinationA {
+    position: relative;
+    color: #035f55;
+    font-family: Kulim Park, var(--default-font-family);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 43.2px;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+.destinationPromiseTextB {
+    position: relative;
+    color: #000000;
+    font-family: Kulim Park, var(--default-font-family);
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 40.86px;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+.imageC {
+    position: absolute;
+    width: 588px;
+    height: 378px;
+    top: 120px;
+    left: 740px;
+    background: var(--images-ruse4) no-repeat center;
+    background-size: cover;
+    border: #131B3A solid 8px;
+    filter: drop-shadow(30px 30px 0px #4D2626);
+    z-index: 8;
+    border-radius: 40px;
+}
+
+.backgroundElements {
+    transform: rotate(45deg);
+    transform-origin: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: var(--images-pattern) center;
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 75%;
+    opacity: 15%;
+}

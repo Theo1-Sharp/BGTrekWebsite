@@ -5,60 +5,87 @@ export default function Footer() {
   return (
     <div className={styles.mainContainer}>
       <div className={styles.headerBackground} />
-      <div className={styles.rectangle} />
+      <div className={styles.imageBackground} />
       <div className={styles.contactUsBackgroundArt} />
       <div className={styles.footerContactUs}>
+        <div className={styles.rectangle} />
+        <p className={styles.contactUsHeading}>CONTACT US</p>
         <div className={styles.rectangle1} />
-        <button className={styles.contactUs}>CONTACT US</button>
-        <div className={styles.rectangle2} />
         <div className={styles.contact} />
       </div>
       <div className={styles.footerLeftSection}>
-        <div className={styles.pagesHeaders}>
-          <span className={styles.destinations}>Destinations</span>
-          <span className={styles.routes}>Routes</span>
-          <span className={styles.blog}>Blog</span>
-          <span className={styles.store}>Store</span>
-        </div>
-        <div className={styles.flexRowD}>
-          <div className={styles.pagesLinks}>
-            <div className={styles.flexRowBf}>
+        <div className={styles.navigationLinks}>
+          <div className={styles.row}>
+            <div className={styles.blogsSection}>
+              <a className={styles.blogs}>Blogs</a>
               <div className={styles.verticalContainer}>
-                <span className={styles.sharedRoutes}>Shared Routes</span>
-                <span className={styles.makeARoute}>Make a Route</span>
-                <span className={styles.myRoutes}>My Routes</span>
+                <a className={styles.ourBlogs} href="/blogs">
+                  Our Blogs
+                </a>
               </div>
-              <span className={styles.ourBlog}>Our Blog</span>
-              <span className={styles.ourStore}>Our Store</span>
             </div>
-            <div className={styles.flexRowBbc}>
-              <div className={styles.verticalContainer3}>
-                <span className={styles.villages}>Villages</span>
-                <span className={styles.cities}>Cities</span>
-                <span className={styles.landmarks}>Landmarks</span>
-                <span className={styles.resorts}>Resorts</span>
-              </div>
-              <div className={styles.regroup}>
-                <span className={styles.ourFaq}>Our FAQ</span>
-                <div className={styles.verticalContainer4}>
-                  <span className={styles.ourCompany}>Our Company</span>
-                  <span className={styles.contactUs5}>Contact Us</span>
-                </div>
+            <div className={styles.destinationsSection}>
+              <span className={styles.destinations}>Destinations</span>
+              <div className={styles.verticalContainer2}>
+                <a className={styles.ourDestinations} href="/destinations">
+                  Our Destinations
+                </a>
               </div>
             </div>
           </div>
-          <span className={styles.faq}>FAQ</span>
-          <span className={styles.aboutUs}>About Us</span>
+          <div className={styles.row3}>
+            <div className={styles.storeSection}>
+              <span className={styles.store}>Store</span>
+              <div className={styles.verticalContainer4}>
+                <a className={styles.ourStore} href="/store">
+                  Our Store
+                </a>
+              </div>
+            </div>
+            <div className={styles.aboutUs}>
+              <span className={styles.aboutUs5}>About Us</span>
+              <div className={styles.verticalContainer6}>
+                <a className={styles.ourCompany} href="/company">
+                  Our Company
+                </a>
+                <a className={styles.contactUs} href="/contacts">
+                  Contact Us
+                </a>
+              </div>
+            </div>
+            <div className={styles.faqSection}>
+              <span className={styles.faq}>FAQ</span>
+              <div className={styles.verticalContainer8}>
+                <a className={styles.ourFaq} href="/faq">
+                  Our FAQ
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className={styles.horizontalLine} />
-        <div className={styles.flexRowA}>
+        <div className={styles.socialLinks}>
+          <div className={styles.horizontalLine} />
           <div className={styles.iconLinks}>
-            <div className={styles.twitter} />
-            <div className={styles.instagram} />
-            <div className={styles.facebook} />
-            <div className={styles.linkedinLogo} />
+            <a
+              className={styles.twitter}
+              href="https://www.twitter.com/bgtrek"
+            />
+            <a
+              className={styles.instagram}
+              href="https://www.instagram.com/bgtrek"
+            />
+            <a
+              className={styles.facebook}
+              href="https://www.facebook.com/bgtrek"
+            />
+            <a
+              className={styles.linkedIn}
+              href="https://www.linkedin.com/in/bgtrek"
+            />
           </div>
-          <span className={styles.bgTrek}>BG-TREK 2023™</span>
+          <a className={styles.bgTrek} href="/home">
+            BG-TREK 2023™
+          </a>
         </div>
       </div>
     </div>

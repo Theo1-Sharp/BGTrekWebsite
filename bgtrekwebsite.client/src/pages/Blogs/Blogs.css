@@ -1,0 +1,1125 @@
+:root {
+  --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+}
+
+.main-container {
+  overflow: hidden;
+}
+
+.main-container,
+.main-container * {
+  box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button {
+  outline: 0;
+}
+
+.main-container {
+  position: relative;
+  width: 1440px;
+  height: 3487px;
+  margin: 0 auto;
+  background: #f2f0ed;
+  overflow: hidden;
+}
+.navbar-background {
+  position: relative;
+  width: 1440px;
+  height: 99px;
+  margin: 0 0 0 3px;
+  background: #121b3a;
+  z-index: 22;
+  box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.6);
+}
+.home-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+  position: absolute;
+  width: 240px;
+  height: 99px;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  background: linear-gradient(135deg, #035f55, #1b8d51);
+  border: 4px solid #ffffff;
+  z-index: 23;
+  overflow: hidden;
+  box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.5) inset;
+}
+.bg-trek {
+  flex-shrink: 0;
+  position: relative;
+  width: 144px;
+  font-family: Koulen, var(--default-font-family);
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 87px;
+  text-align: center;
+  text-overflow: initial;
+  white-space: nowrap;
+  z-index: 24;
+}
+.bg {
+  position: relative;
+  color: #f2f0ed;
+  font-family: Koulen, var(--default-font-family);
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 86.719px;
+  text-align: center;
+}
+.text-2 {
+  position: relative;
+  color: #d4d9e5;
+  font-family: Koulen, var(--default-font-family);
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 86.719px;
+  text-align: center;
+}
+.trek {
+  position: relative;
+  color: #f2f0ed;
+  font-family: Koulen, var(--default-font-family);
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 86.719px;
+  text-align: center;
+}
+.rectangle {
+  position: absolute;
+  width: 15.9%;
+  height: 100%;
+  top: 0;
+  left: 84.1%;
+  background: rgba(85, 53, 53, 0.6);
+  border-left: 4px solid #ffffff;
+  z-index: 35;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 20px;
+  position: absolute;
+  width: 229px;
+  height: 99px;
+  top: 0;
+  left: 0;
+  z-index: 36;
+}
+.login-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  position: relative;
+  width: 78px;
+  padding: 8px 16px 8px 16px;
+  cursor: pointer;
+  background: #278557;
+  border: 3px dashed #ffffff;
+  z-index: 37;
+  border-radius: 10px;
+}
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  width: 46px;
+  height: 23px;
+  color: #ffffff;
+  font-family: Kulim Park, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 23px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 38;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
+}
+.sign-up-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  position: relative;
+  width: 100px;
+  padding: 8px 16px 8px 16px;
+  background: #be3d3d;
+  border: 3px dashed #ffffff;
+  z-index: 39;
+  border-radius: 10px;
+}
+.sign-up {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  width: 68px;
+  height: 23px;
+  color: #ffffff;
+  font-family: Kulim Park, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 23px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 40;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
+}
+.faq-cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 12px;
+  position: absolute;
+  width: 127px;
+  height: 48px;
+  top: 25px;
+  left: 1051px;
+  z-index: 41;
+}
+.faq {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  width: 67px;
+  height: 39px;
+  color: #e7e7e7;
+  font-family: Kulim Park, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 39px;
+  text-align: center;
+  text-decoration: underline;
+  white-space: nowrap;
+  z-index: 42;
+}
+.shopping-cart {
+  flex-shrink: 0;
+  position: relative;
+  width: 48px;
+  height: 48px;
+  background: url(../assets/images/5ef1139c-73d5-41b5-8cf7-03d35b29612d.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 43;
+}
+.navigation-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 37px;
+  position: absolute;
+  width: 468.92px;
+  height: 39px;
+  top: 30px;
+  left: 292px;
+  z-index: 25;
+}
+.blog-button {
+  flex-shrink: 0;
+  position: relative;
+  width: 49px;
+  height: 37px;
+  z-index: 26;
+}
+.blog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 49px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  color: #ffffff;
+  font-family: Josefin Slab, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+  text-transform: capitalize;
+  z-index: 27;
+}
+.destinations-button {
+  flex-shrink: 0;
+  position: relative;
+  width: 133px;
+  height: 37px;
+  z-index: 28;
+}
+.destinations {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 133px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  color: #e7e7e7;
+  font-family: Josefin Slab, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+  text-transform: capitalize;
+  z-index: 29;
+}
+.store-button {
+  flex-shrink: 0;
+  position: relative;
+  width: 62.921px;
+  height: 39px;
+  z-index: 30;
+}
+.store {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 62.921px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  color: #e7e7e7;
+  font-family: Josefin Slab, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+  z-index: 31;
+}
+.about-us-button {
+  flex-shrink: 0;
+  position: relative;
+  width: 112.999px;
+  height: 39px;
+  z-index: 32;
+}
+.about-us {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 112.999px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  color: #e7e7e7;
+  font-family: Josefin Slab, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+  z-index: 33;
+}
+.rectangle-1 {
+  position: relative;
+  width: 1440px;
+  height: 626px;
+  margin: 532px 0 0 0;
+  background: #e9d2a6;
+  z-index: 18;
+}
+.destination {
+  position: absolute;
+  width: 580px;
+  height: 626px;
+  top: 0;
+  left: 113px;
+  font-family: Kulim Park, var(--default-font-family);
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 40.86px;
+  text-align: left;
+  z-index: 19;
+}
+.destination-2 {
+  position: relative;
+  color: #035f55;
+  font-family: Kulim Park, var(--default-font-family);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 43.2px;
+  text-align: left;
+  text-transform: capitalize;
+}
+.destination-3 {
+  position: relative;
+  color: #000000;
+  font-family: Kulim Park, var(--default-font-family);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40.86px;
+  text-align: left;
+  text-transform: capitalize;
+}
+.istock-rfe {
+  position: absolute;
+  width: 568px;
+  height: 378px;
+  top: 124px;
+  left: 751px;
+  background: url(../assets/images/1b64a4ef-51bd-4841-a817-d386b7359b74.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 20;
+  border-radius: 40px;
+  box-sizing: content-box;
+}
+.frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 90px;
+  position: relative;
+  width: 1300px;
+  margin: 140px 0 0 57px;
+  z-index: 10;
+}
+.frame-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: 100px;
+  position: relative;
+  width: 496px;
+  z-index: 11;
+}
+.image {
+  flex-shrink: 0;
+  position: relative;
+  width: 496px;
+  height: 305px;
+  background: url(../assets/images/0cbc619f-a3e1-4be6-974a-98e1ecd29e2e.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 12;
+  border-radius: 40px;
+}
+.image-5 {
+  flex-shrink: 0;
+  position: relative;
+  width: 479px;
+  height: 280px;
+  background: url(../assets/images/d50faa7b-c891-4855-8604-078195a580d1.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 13;
+  border-radius: 40px;
+  box-sizing: content-box;
+}
+.group {
+  flex-shrink: 0;
+  position: relative;
+  width: 714px;
+  height: 626px;
+  z-index: 14;
+}
+.rectangle-6 {
+  position: absolute;
+  width: 714px;
+  height: 615px;
+  top: 0;
+  left: 0;
+  background: url(../assets/images/d5978a8c-ca4e-443a-aa5b-617b503b6002.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 15;
+}
+.destination-promise {
+  position: absolute;
+  width: 580px;
+  height: 626px;
+  top: 0;
+  left: 67px;
+  font-family: Kulim Park, var(--default-font-family);
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 40.86px;
+  text-align: left;
+  z-index: 16;
+}
+.destination-7 {
+  position: relative;
+  color: #035f55;
+  font-family: Kulim Park, var(--default-font-family);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 43.2px;
+  text-align: left;
+  text-transform: capitalize;
+}
+.destination-promise-text {
+  position: relative;
+  color: #000000;
+  font-family: Kulim Park, var(--default-font-family);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40.86px;
+  text-align: left;
+  text-transform: capitalize;
+}
+.rectangle-8 {
+  position: relative;
+  width: 1440px;
+  height: 626px;
+  margin: 130px 0 0 0;
+  background: #ef9a99;
+  z-index: 6;
+}
+.destination-promise-9 {
+  position: absolute;
+  width: 580px;
+  height: 626px;
+  top: 0;
+  left: 101px;
+  font-family: Kulim Park, var(--default-font-family);
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 40.86px;
+  text-align: left;
+  z-index: 7;
+}
+.destination-a {
+  position: relative;
+  color: #035f55;
+  font-family: Kulim Park, var(--default-font-family);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 43.2px;
+  text-align: left;
+  text-transform: capitalize;
+}
+.destination-promise-text-b {
+  position: relative;
+  color: #000000;
+  font-family: Kulim Park, var(--default-font-family);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40.86px;
+  text-align: left;
+  text-transform: capitalize;
+}
+.image-c {
+  position: absolute;
+  width: 588px;
+  height: 378px;
+  top: 120px;
+  left: 740px;
+  background: url(../assets/images/8f94ae06-4214-4ee5-a208-baaec400930b.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 8;
+  border-radius: 40px;
+}
+.header-background {
+  position: relative;
+  width: 1440px;
+  height: 649px;
+  margin: 0 0 0 0;
+  background: #121b3a;
+  z-index: 45;
+}
+.rectangle-d {
+  position: absolute;
+  width: 44.2%;
+  height: 100%;
+  top: 0;
+  left: 55.8%;
+  background: #ffffff;
+  z-index: 46;
+}
+.contact-us-background-art {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url(../assets/images/43d0bde6-9adf-409c-801c-17118db707ed.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 47;
+}
+.rectangle-e {
+  position: absolute;
+  width: 51.42%;
+  height: 19.72%;
+  top: 7.09%;
+  left: 23.42%;
+  background: #33a86b;
+  border: 4px solid #132a13;
+  z-index: 80;
+  border-radius: 30px;
+  box-shadow: 6px 6px 10px 0 #000000;
+}
+.contact-us {
+  position: absolute;
+  width: 60.41%;
+  height: 67.97%;
+  top: 12.5%;
+  left: 0.54%;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Koulen, var(--default-font-family);
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 86.719px;
+  white-space: nowrap;
+  background: transparent;
+  border: none;
+  z-index: 81;
+}
+.rectangle-f {
+  position: absolute;
+  width: 10.81%;
+  height: 62.5%;
+  top: 15.63%;
+  left: 73.78%;
+  background: #366388;
+  border: 4px dashed #ffffff;
+  z-index: 82;
+  border-radius: 20px;
+  box-sizing: content-box;
+}
+.contact {
+  position: relative;
+  width: 64.044px;
+  height: 64px;
+  margin: 8px 0 0 8.006px;
+  background: url(../assets/images/a6fc2876985adc41a39ab255b2f3d550f51b47eb.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 83;
+}
+.pages-headers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  position: absolute;
+  width: 768px;
+  height: 47px;
+  top: 201px;
+  left: 24px;
+  z-index: 49;
+}
+.destinations-10 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  width: 192px;
+  height: 46.834px;
+  color: #ffffff;
+  font-family: Kulim Park, var(--default-font-family);
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 46.834px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 50;
+}
+.routes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  width: 192px;
+  height: 47px;
+  color: #ffffff;
+  font-family: Kulim Park, var(--default-font-family);
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 47px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 51;
+}
+.blog-11 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  width: 192px;
+  height: 47px;
+  color: #ffffff;
+  font-family: Kulim Park, var(--default-font-family);
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 47px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 52;
+}
+.store-12 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  width: 192px;
+  height: 47px;
+  color: #ffffff;
+  font-family: Kulim Park, var(--default-font-family);
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 47px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 53;
+}
+.vertical-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  position: absolute;
+  width: 153px;
+  height: 172px;
+  top: 279px;
+  left: 43px;
+  z-index: 65;
+}
+.villages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  width: 154px;
+  height: 47px;
+  color: #c3d2e9;
+  font-family: Josefin Slab, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+  text-decoration: underline;
+  z-index: 66;
+}
+.cities {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  width: 154px;
+  height: 47px;
+  color: #c3d2e9;
+  font-family: Josefin Slab, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+  text-decoration: underline;
+  z-index: 67;
+}
+.landmarks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  width: 154px;
+  height: 47px;
+  color: #c3d2e9;
+  font-family: Josefin Slab, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+  text-decoration: underline;
+  z-index: 68;
+}
+.resorts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  width: 154px;
+  height: 47px;
+  color: #c3d2e9;
+  font-family: Josefin Slab, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+  text-decoration: underline;
+  z-index: 69;
+}
+.vertical-container-13 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  position: absolute;
+  width: 154px;
+  height: 141px;
+  top: 279px;
+  left: 235px;
+  z-index: 61;
+}
+.shared-routes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  width: 154px;
+  height: 47px;
+  color: #c4d3ea;
+  font-family: Josefin Slab, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+  text-decoration: underline;
+  z-index: 62;
+}
+.make-a-route {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  width: 154px;
+  height: 47px;
+  color: #c4d3ea;
+  font-family: Josefin Slab, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+  text-decoration: underline;
+  z-index: 63;
+}
+.my-routes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  width: 154px;
+  height: 47px;
+  color: #c4d3ea;
+  font-family: Josefin Slab, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+  text-decoration: underline;
+  z-index: 64;
+}
+.our-blog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 106.074px;
+  height: 7.24%;
+  top: 42.99%;
+  left: 31.34%;
+  color: #c4d3ea;
+  font-family: Josefin Slab, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+  text-decoration: underline;
+  z-index: 57;
+}
+.our-store {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 106.074px;
+  height: 7.24%;
+  top: 44.22%;
+  left: 44.68%;
+  color: #c4d3ea;
+  font-family: Josefin Slab, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+  text-decoration: underline;
+  z-index: 56;
+}
+.about-us-14 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 151.105px;
+  height: 9.86%;
+  top: 56.24%;
+  left: 43.09%;
+  color: #ffffff;
+  font-family: Kulim Park, var(--default-font-family);
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 36.32px;
+  text-align: center;
+  z-index: 70;
+}
+.faq-15 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 80.056px;
+  height: 9.86%;
+  top: 56.24%;
+  left: 32.24%;
+  color: #ffffff;
+  font-family: Kulim Park, var(--default-font-family);
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 36.32px;
+  text-align: center;
+  z-index: 71;
+}
+.our-faq {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 106.074px;
+  height: 7.24%;
+  top: 63.48%;
+  left: 31.34%;
+  color: #c4d3ea;
+  font-family: Josefin Slab, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+  text-decoration: underline;
+  z-index: 55;
+}
+.vertical-container-16 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  position: absolute;
+  width: 164px;
+  height: 94px;
+  top: 416px;
+  left: 614px;
+  z-index: 58;
+}
+.our-company {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  width: 164px;
+  height: 47px;
+  color: #c4d3ea;
+  font-family: Josefin Slab, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+  text-decoration: underline;
+  z-index: 59;
+}
+.contact-us-17 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  width: 164px;
+  height: 47px;
+  color: #c4d3ea;
+  font-family: Josefin Slab, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+  text-decoration: underline;
+  z-index: 60;
+}
+.horizontal-line {
+  position: absolute;
+  width: 51.22%;
+  height: 0.62%;
+  top: 83.67%;
+  left: 1.67%;
+  background: url(../assets/images/34f1f925-3dc1-4a21-8e44-1d18bef0a365.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 73;
+}
+.icon-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 30px;
+  position: absolute;
+  width: 234px;
+  height: 36px;
+  top: 570px;
+  left: 24px;
+  z-index: 74;
+}
+.twitter {
+  flex-shrink: 0;
+  position: relative;
+  width: 36px;
+  height: 36px;
+  background: url(../assets/images/523d1ae92d0e487365ffcbb21a6cff117164b350.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 75;
+}
+.instagram {
+  flex-shrink: 0;
+  position: relative;
+  width: 36px;
+  height: 36px;
+  background: url(../assets/images/6149c9f42ff6c577eef6a6f7f8645eae9f50ffc7.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 76;
+}
+.facebook {
+  flex-shrink: 0;
+  position: relative;
+  width: 36px;
+  height: 36px;
+  background: url(../assets/images/d408541888ea5d25ee8cb6b3f1c81675798cc87d.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 77;
+}
+.linkedin-logo {
+  flex-shrink: 0;
+  position: relative;
+  width: 36px;
+  height: 36px;
+  background: url(../assets/images/e8c4068fae16391b1770a7d299caef700942a699.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 78;
+}
+.bg-trek-2023 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 12.3%;
+  height: 4.47%;
+  top: 88.29%;
+  left: 40.65%;
+  color: #ffffff;
+  font-family: Kulim Park, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 27.24px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 72;
+}
+.background-elements {
+  position: absolute;
+  width: 3593.573px;
+  height: 3593.573px;
+  top: -261px;
+  left: -1046px;
+  background: url(../assets/images/8cdb375a-c5cd-40ce-8270-078c0e17c065.png)
+    no-repeat center;
+  background-size: cover;
+}
+.a-quite-rural-bulgarian-village-vector-art-digital-modern {
+  position: absolute;
+  width: 1440px;
+  height: 388px;
+  top: 98px;
+  left: 0;
+  background: url(../assets/images/c89937fbcc55c00875ad2e7d9550cb2a31a18cd9.png)
+    no-repeat center;
+  background-size: cover;
+  border-top: 8px solid #132a13;
+  z-index: 1;
+}
+.blog-18 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 545px;
+  height: 155px;
+  top: 409px;
+  left: 448px;
+  color: #ffffff;
+  font-family: Koulen, var(--default-font-family);
+  font-size: 96px;
+  font-weight: 400;
+  line-height: 155px;
+  text-align: center;
+  text-transform: capitalize;
+  white-space: nowrap;
+  letter-spacing: 24px;
+  z-index: 4;
+}
+.rectangle-19 {
+  position: absolute;
+  width: 1043px;
+  height: 135px;
+  top: 419px;
+  left: 200px;
+  background: url(../assets/images/65cb2c10-fef6-4107-9d11-9863595ab1c6.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 3;
+  border-radius: 10px;
+  box-sizing: content-box;
+}

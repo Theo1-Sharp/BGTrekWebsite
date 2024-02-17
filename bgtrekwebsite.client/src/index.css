@@ -9,6 +9,31 @@
     --primary: rgba(235, 72, 77, 1);
     --secondary: rgba(212, 217, 229, 1);
     --text: rgba(19, 42, 19, 1);
+
+    --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+        "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+        "Source Han Sans CN", sans-serif;
+    
+    
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+}
+
+a:hover {
+    filter:
+        brightness(125%) contrast(125%) drop-shadow(0 0 0.5rem black);
+}
+
+a:active {
+    filter:
+        brightness(150%) contrast(150%);
 }
 
 body {

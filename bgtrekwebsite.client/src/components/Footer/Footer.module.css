@@ -1,12 +1,12 @@
-:root {
-    --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-        Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
-        "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
-        "Source Han Sans CN", sans-serif;
-}
-
 .mainContainer {
     overflow: hidden;
+
+    --images-background: url("/src/assets//images/pages/footer/minimalist-abstract-mountain-landscape-modern-vector-41276987.png");
+    --images-contact: url("/src/assets/images/pages/footer/contact.png");
+    --images-twitter: url("/src/assets/images/pages/footer/twitter.png");
+    --images-instagram: url("/src/assets/images/pages/footer/instagram.png");
+    --images-facebook: url("/src/assets/images/pages/footer/facebook.png");
+    --images-linkedin: url("/src/assets/images/pages/footer/linkedin-logo.png");
 }
 
 .mainContainer,
@@ -37,7 +37,7 @@ button {
     background: #121b3a;
 }
 
-.rectangle {
+.imageBackground {
     position: absolute;
     width: 44.2%;
     height: 100%;
@@ -53,7 +53,8 @@ button {
     height: 100%;
     top: 0;
     left: 55.8%;
-    background-image: url("/src/assets/images/backgrounds/minimalist-abstract-mountain-landscape-modern-vector-41276987.png");
+    background: var(--images-background) no-repeat center;
+    background-size: 100% 100%;
     background-size: cover;
     z-index: 2;
     opacity: 50%;
@@ -65,10 +66,10 @@ button {
     height: 19.72%;
     top: 7.09%;
     left: 23.42%;
-    z-index: 34;
+    z-index: 36;
 }
 
-.rectangle1 {
+.rectangle {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -76,30 +77,25 @@ button {
     left: 0;
     background: #33a86b;
     border: 4px solid #132a13;
-    z-index: 35;
+    z-index: 37;
     border-radius: 30px;
     box-shadow: 6px 6px 10px 0 #000000;
 }
 
-.contactUs {
+.contactUsHeading {
+    margin: 0;
     position: absolute;
-    width: 60.41%;
-    height: 67.97%;
-    top: 15.63%;
-    left: 1.08%;
-    cursor: pointer;
     color: #ffffff;
     font-family: Koulen, var(--default-font-family);
     font-size: 48px;
     font-weight: 400;
-    line-height: 86.719px;
-    white-space: nowrap;
-    background: transparent;
-    border: none;
-    z-index: 36;
+    z-index: 38;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 10%;
 }
 
-.rectangle2 {
+.rectangle1 {
     position: absolute;
     width: 10.81%;
     height: 62.5%;
@@ -107,7 +103,7 @@ button {
     left: 74.32%;
     background: #366388;
     border: 4px dashed #ffffff;
-    z-index: 37;
+    z-index: 39;
     border-radius: 20px;
     box-sizing: content-box;
 }
@@ -118,29 +114,120 @@ button {
     height: 50%;
     top: 25%;
     left: 75.41%;
-    background: url("/src/assets/images/icons/contact.png") no-repeat center;
+    background: var(--images-contact) no-repeat center;
     background-size: cover;
-    z-index: 38;
+    z-index: 40;
 }
 
 .footerLeftSection {
     position: absolute;
-    width: 53.33%;
-    height: 62.4%;
-    top: 30.97%;
+    width: 51.39%;
+    height: 51.77%;
+    top: 41.6%;
     left: 1.67%;
     z-index: 3;
 }
 
-.pagesHeaders {
+.navigationLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 30px;
+    position: relative;
+    width: 740px;
+    margin: 0 0 0 0;
+    z-index: 4;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 80px;
+    position: relative;
+    min-width: 0;
+    z-index: 5;
+}
+
+.blogsSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 16px;
+    position: relative;
+    width: 100px;
+    z-index: 6;
+}
+
+.blogs {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: nowrap;
+    flex-shrink: 0;
+    flex-basis: auto;
     position: relative;
-    width: 768px;
-    margin: 0 0 0 0;
-    z-index: 4;
+    width: 72px;
+    height: 36px;
+    color: #ffffff;
+    font-family: Kulim Park, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 7;
+}
+
+.verticalContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 16px;
+    position: relative;
+    width: 100px;
+    z-index: 8;
+}
+
+.ourBlogs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    width: 100px;
+    height: 24px;
+    color: #c4d3ea;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 24px;
+    text-align: center;
+    text-decoration: underline;
+    white-space: nowrap;
+    z-index: 9;
+}
+
+.destinationsSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 16px;
+    position: relative;
+    width: 170px;
+    z-index: 10;
 }
 
 .destinations {
@@ -150,54 +237,73 @@ button {
     flex-shrink: 0;
     flex-basis: auto;
     position: relative;
-    width: 192px;
-    height: 46.834px;
+    width: 168px;
+    height: 36px;
     color: #ffffff;
     font-family: Kulim Park, var(--default-font-family);
     font-size: 32px;
     font-weight: 400;
-    line-height: 46.834px;
+    line-height: 36px;
     text-align: center;
     white-space: nowrap;
-    z-index: 5;
+    z-index: 11;
 }
 
-.routes {
+.verticalContainer2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 16px;
+    position: relative;
+    width: 170px;
+    z-index: 12;
+}
+
+.ourDestinations {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
     flex-basis: auto;
     position: relative;
-    width: 192px;
-    height: 47px;
-    color: #ffffff;
-    font-family: Kulim Park, var(--default-font-family);
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 47px;
+    width: 170px;
+    height: 24px;
+    color: #c4d3ea;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 24px;
     text-align: center;
+    text-decoration: underline;
     white-space: nowrap;
-    z-index: 6;
+    z-index: 13;
 }
 
-.blog {
+.row3 {
     display: flex;
     align-items: center;
-    justify-content: center;
+    align-self: stretch;
+    flex-wrap: nowrap;
     flex-shrink: 0;
-    flex-basis: auto;
+    gap: 80px;
     position: relative;
-    width: 192px;
-    height: 47px;
-    color: #ffffff;
-    font-family: Kulim Park, var(--default-font-family);
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 47px;
-    text-align: center;
-    white-space: nowrap;
-    z-index: 7;
+    min-width: 0;
+    z-index: 14;
+}
+
+.storeSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 16px;
+    position: relative;
+    width: 98px;
+    z-index: 15;
 }
 
 .store {
@@ -207,270 +313,16 @@ button {
     flex-shrink: 0;
     flex-basis: auto;
     position: relative;
-    width: 192px;
-    height: 47px;
+    width: 74px;
+    height: 36px;
     color: #ffffff;
     font-family: Kulim Park, var(--default-font-family);
     font-size: 32px;
     font-weight: 400;
-    line-height: 47px;
+    line-height: 36px;
     text-align: center;
     white-space: nowrap;
-    z-index: 8;
-}
-
-.flexRowD {
-    position: relative;
-    width: 735px;
-    height: 231px;
-    margin: 31px 0 0 19px;
-    z-index: 26;
-}
-
-.pagesLinks {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 9;
-}
-
-.flexRowBf {
-    position: relative;
-    width: 514.52px;
-    height: 141px;
-    margin: 0 0 0 192px;
     z-index: 16;
-}
-
-.verticalContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: nowrap;
-    position: absolute;
-    width: 154px;
-    height: 141px;
-    top: 0;
-    left: 0;
-    z-index: 16;
-}
-
-.sharedRoutes {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    position: relative;
-    width: 154px;
-    height: 47px;
-    color: #c4d3ea;
-    font-family: Josefin Slab, var(--default-font-family);
-    font-size: 24px;
-    font-weight: normal;
-    line-height: 24px;
-    text-align: center;
-    text-decoration: underline;
-    z-index: 17;
-}
-
-.makeARoute {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    position: relative;
-    width: 154px;
-    height: 47px;
-    color: #c4d3ea;
-    font-family: Josefin Slab, var(--default-font-family);
-    font-size: 24px;
-    font-weight: normal;
-    line-height: 24px;
-    text-align: center;
-    text-decoration: underline;
-    z-index: 18;
-}
-
-.myRoutes {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    position: relative;
-    width: 154px;
-    height: 47px;
-    color: #c4d3ea;
-    font-family: Josefin Slab, var(--default-font-family);
-    font-size: 24px;
-    font-weight: normal;
-    line-height: 24px;
-    text-align: center;
-    text-decoration: underline;
-    z-index: 19;
-}
-
-.ourBlog {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    width: 106.074px;
-    height: 33.33%;
-    top: 0;
-    left: 42.04%;
-    color: #c4d3ea;
-    font-family: Josefin Slab, var(--default-font-family);
-    font-size: 24px;
-    font-weight: normal;
-    line-height: 24px;
-    text-align: center;
-    text-decoration: underline;
-    z-index: 12;
-}
-
-.ourStore {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    width: 106.074px;
-    height: 33.33%;
-    top: 5.67%;
-    left: 79.38%;
-    color: #c4d3ea;
-    font-family: Josefin Slab, var(--default-font-family);
-    font-size: 24px;
-    font-weight: normal;
-    line-height: 24px;
-    text-align: center;
-    text-decoration: underline;
-    z-index: 11;
-}
-
-.flexRowBbc {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 20;
-}
-
-.verticalContainer3 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: nowrap;
-    position: absolute;
-    width: 153px;
-    height: 172px;
-    top: 0;
-    left: 0;
-    z-index: 20;
-}
-
-.villages {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    position: relative;
-    width: 154px;
-    height: 47px;
-    color: #c3d2e9;
-    font-family: Josefin Slab, var(--default-font-family);
-    font-size: 24px;
-    font-weight: normal;
-    line-height: 24px;
-    text-align: center;
-    text-decoration: underline;
-    z-index: 21;
-}
-
-.cities {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    position: relative;
-    width: 154px;
-    height: 47px;
-    color: #c3d2e9;
-    font-family: Josefin Slab, var(--default-font-family);
-    font-size: 24px;
-    font-weight: normal;
-    line-height: 24px;
-    text-align: center;
-    text-decoration: underline;
-    z-index: 22;
-}
-
-.landmarks {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    position: relative;
-    width: 154px;
-    height: 47px;
-    color: #c3d2e9;
-    font-family: Josefin Slab, var(--default-font-family);
-    font-size: 24px;
-    font-weight: normal;
-    line-height: 24px;
-    text-align: center;
-    text-decoration: underline;
-    z-index: 23;
-}
-
-.resorts {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    position: relative;
-    width: 154px;
-    height: 47px;
-    color: #c3d2e9;
-    font-family: Josefin Slab, var(--default-font-family);
-    font-size: 24px;
-    font-weight: normal;
-    line-height: 24px;
-    text-align: center;
-    text-decoration: underline;
-    z-index: 24;
-}
-
-.regroup {
-    position: absolute;
-    width: 44.45%;
-    height: 100%;
-    top: 0;
-    left: 55.55%;
-    z-index: 13;
-}
-
-.ourFaq {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    width: 106.074px;
-    height: 20.35%;
-    top: 57.58%;
-    left: 0;
-    color: #c4d3ea;
-    font-family: Josefin Slab, var(--default-font-family);
-    font-size: 24px;
-    font-weight: normal;
-    line-height: 24px;
-    text-align: center;
-    text-decoration: underline;
-    z-index: 10;
 }
 
 .verticalContainer4 {
@@ -479,12 +331,75 @@ button {
     align-items: center;
     justify-content: center;
     flex-wrap: nowrap;
-    position: absolute;
-    width: 164px;
-    height: 94px;
-    top: 137px;
-    left: 162.687px;
-    z-index: 13;
+    flex-shrink: 0;
+    gap: 16px;
+    position: relative;
+    width: 98px;
+    z-index: 17;
+}
+
+.ourStore {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    width: 98px;
+    height: 24px;
+    color: #c4d3ea;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 24px;
+    text-align: center;
+    text-decoration: underline;
+    white-space: nowrap;
+    z-index: 18;
+}
+
+.aboutUs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 16px;
+    position: relative;
+    width: 149px;
+    z-index: 19;
+}
+
+.aboutUs5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    width: 130px;
+    height: 36px;
+    color: #ffffff;
+    font-family: Kulim Park, var(--default-font-family);
+    font-size: 32px;
+    font-weight: normal;
+    line-height: 36px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 20;
+}
+
+.verticalContainer6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 16px;
+    position: relative;
+    width: 149px;
+    z-index: 21;
 }
 
 .ourCompany {
@@ -492,9 +407,10 @@ button {
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
+    flex-basis: auto;
     position: relative;
-    width: 164px;
-    height: 47px;
+    width: 149px;
+    height: 24px;
     color: #c4d3ea;
     font-family: Josefin Slab, var(--default-font-family);
     font-size: 24px;
@@ -502,17 +418,19 @@ button {
     line-height: 24px;
     text-align: center;
     text-decoration: underline;
-    z-index: 14;
+    white-space: nowrap;
+    z-index: 22;
 }
 
-.contactUs5 {
+.contactUs {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
+    flex-basis: auto;
     position: relative;
-    width: 164px;
-    height: 47px;
+    width: 110px;
+    height: 24px;
     color: #c4d3ea;
     font-family: Josefin Slab, var(--default-font-family);
     font-size: 24px;
@@ -520,64 +438,90 @@ button {
     line-height: 24px;
     text-align: center;
     text-decoration: underline;
-    z-index: 15;
+    white-space: nowrap;
+    z-index: 23;
+}
+
+.faqSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 16px;
+    position: relative;
+    width: 100px;
+    z-index: 24;
 }
 
 .faq {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    width: 80.056px;
-    height: 27.71%;
-    top: 37.23%;
-    left: 57.32%;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    width: 55px;
+    height: 36px;
     color: #ffffff;
     font-family: Kulim Park, var(--default-font-family);
     font-size: 32px;
     font-weight: normal;
-    line-height: 36.32px;
+    line-height: 36px;
     text-align: center;
+    white-space: nowrap;
+    z-index: 25;
+}
+
+.verticalContainer8 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 16px;
+    position: relative;
+    width: 100px;
     z-index: 26;
 }
 
-.aboutUs {
+.ourFaq {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    width: 151.105px;
-    height: 27.71%;
-    top: 37.23%;
-    left: 78.56%;
-    color: #ffffff;
-    font-family: Kulim Park, var(--default-font-family);
-    font-size: 32px;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    width: 100px;
+    height: 24px;
+    color: #c4d3ea;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 24px;
     font-weight: normal;
-    line-height: 36.32px;
+    line-height: 24px;
     text-align: center;
-    z-index: 25;
+    text-decoration: underline;
+    white-space: nowrap;
+    z-index: 27;
+}
+
+.socialLinks {
+    position: relative;
+    width: 738.529px;
+    height: 63px;
+    margin: 51px 0 0 0;
+    z-index: 28;
+    overflow: visible auto;
 }
 
 .horizontalLine {
     position: relative;
     width: 737.512px;
     height: 4px;
-    margin: 33px 0 0 0.02px;
-    background-size: 100% 100%;
-    z-index: 28;
+    margin: 0 0 0 0;
+    z-index: 30;
     background-color: #304078;
-}
-
-.flexRowA {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    width: 738.529px;
-    height: 36px;
-    margin: 23px 0 0 0;
-    z-index: 29;
 }
 
 .iconLinks {
@@ -585,11 +529,13 @@ button {
     align-items: center;
     justify-content: center;
     flex-wrap: nowrap;
-    flex-shrink: 0;
     gap: 30px;
-    position: relative;
+    position: absolute;
     width: 234px;
-    z-index: 29;
+    height: 36px;
+    top: 27px;
+    left: 0;
+    z-index: 31;
 }
 
 .twitter {
@@ -597,9 +543,9 @@ button {
     position: relative;
     width: 36px;
     height: 36px;
-    background: url("/src/assets/images/icons/twitter.png") no-repeat center;
+    background: var(--images-twitter) no-repeat center;
     background-size: cover;
-    z-index: 30;
+    z-index: 32;
 }
 
 .instagram {
@@ -607,9 +553,9 @@ button {
     position: relative;
     width: 36px;
     height: 36px;
-    background: url("/src/assets/images/icons/instagram.png") no-repeat center;
+    background: var(--images-instagram) no-repeat center;
     background-size: cover;
-    z-index: 31;
+    z-index: 33;
 }
 
 .facebook {
@@ -617,35 +563,36 @@ button {
     position: relative;
     width: 36px;
     height: 36px;
-    background: url("/src/assets/images/icons/facebook.png") no-repeat center;
+    background: var(--images-facebook) no-repeat center;
     background-size: cover;
-    z-index: 32;
+    z-index: 34;
 }
 
-.linkedinLogo {
+.linkedIn {
     flex-shrink: 0;
     position: relative;
     width: 36px;
     height: 36px;
-    background: url("/src/assets/images/icons/linkedin-logo.png") no-repeat center;
+    background: var(--images-linkedin) no-repeat center;
     background-size: cover;
-    z-index: 33;
+    z-index: 35;
 }
 
 .bgTrek {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-shrink: 0;
-    position: relative;
-    width: 177.123px;
-    height: 29px;
+    position: absolute;
+    width: 23.98%;
+    height: 46.03%;
+    top: 47.62%;
+    left: 76.02%;
     color: #ffffff;
     font-family: Kulim Park, var(--default-font-family);
     font-size: 24px;
     font-weight: 400;
-    line-height: 29px;
+    line-height: 27.24px;
     text-align: center;
     white-space: nowrap;
-    z-index: 27;
+    z-index: 29;
 }
