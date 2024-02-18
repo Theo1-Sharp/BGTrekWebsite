@@ -15,6 +15,17 @@ This project uses the following technologies:
 - React
   - react-router-dom
   - react-query
+- ASP.NET Core
+  - BGTrekWebsite.Server
+    * Top-level packages:
+      - Microsoft.AspNetCore.SpaProxy
+      - Swashbuckle.AspNetCore
+    * Transitive packages:
+      - Microsoft.Extensions.ApiDescription.Server
+      - Microsoft.OpenApi
+      - Swashbuckle.AspNetCore.Swagger
+      - Swashbuckle.AspNetCore.SwaggerGen
+      - Swashbuckle.AspNetCore.SwaggerUI
 
 ## TO DO
 
