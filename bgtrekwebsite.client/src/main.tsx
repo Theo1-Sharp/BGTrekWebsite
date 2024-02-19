@@ -10,6 +10,8 @@ import Navbar from "./components/Navbar/Navbar.tsx";
 import Footer from "./components/Footer/Footer.tsx";
 import Home from "./pages/Home/Home.tsx";
 import Blogs from "./pages/Blogs/Blogs.tsx";
+import Destinations from "./pages/Destinations/Destinations.tsx";
+
 import App from "./pages/App/App.tsx";
 
 const queryClient = new QueryClient();
@@ -20,16 +22,15 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
     <QueryClientProvider client={queryClient}>
       <Router>
         <PageResize>
-          <div>
-            <Navbar />
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/home" element={<Home />} />
-              <Route path="/blogs" element={<Blogs />} />
-              <Route path="/app" element={<App />} />
-            </Routes>
-            <Footer />
-          </div>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/blogs" element={<Blogs />} />
+            <Route path="/app" element={<App />} />
+            <Route path="/destinations" element={<Destinations />} />
+          </Routes>
+          <Footer />
         </PageResize>
       </Router>
     </QueryClientProvider>

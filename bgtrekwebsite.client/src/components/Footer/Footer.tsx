@@ -3,7 +3,7 @@ import styles from "./Footer.module.css";
 
 export default function Footer() {
   return (
-    <div className={styles.mainContainer}>
+    <footer className={styles.mainContainer}>
       <div className={styles.headerBackground} />
       <div className={styles.imageBackground} />
       <div className={styles.contactUsBackgroundArt} />
@@ -88,6 +88,6 @@ export default function Footer() {
           </a>
         </div>
       </div>
-    </div>
+    </footer>
   );
 }

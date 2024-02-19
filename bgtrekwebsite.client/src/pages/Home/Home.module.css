@@ -219,6 +219,7 @@ button {
 }
 
 .exploreTheHiddenGemsOfBulgaria {
+    line-height: normal;
     flex-shrink: 0;
     position: relative;
     width: 740px;

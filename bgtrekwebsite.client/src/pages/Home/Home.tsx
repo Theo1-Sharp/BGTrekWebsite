@@ -1,7 +1,5 @@
 import React from "react";
 import styles from "./Home.module.css";
-import Navbar from "../../components/Navbar/Navbar";
-import Footer from "../../components/Footer/Footer";
 
 export default function Main() {
   return (
@@ -42,9 +40,6 @@ export default function Main() {
                 landscapes.
                 <br />
               </p>
-              <span className={styles.textF}>
-                <br />
-              </span>
             </div>
           </div>
         </div>

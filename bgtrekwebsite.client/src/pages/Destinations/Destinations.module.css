@@ -1,0 +1,407 @@
+.mainContainer {
+    overflow: hidden;
+    --images-search: url("/src/assets/images/pages/destinations/pexels-photo-1634840.jpeg");
+    --images-arrow: url("/src/assets/images/pages/destinations/double-arrow.png");
+    --images-choose: url("/src/assets/images/pages/destinations/list.png");
+}
+
+.mainContainer,
+.mainContainer * {
+    box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button {
+    outline: 0;
+}
+
+.mainContainer {
+    position: relative;
+    width: 1440px;
+    margin: 0 auto;
+    background: #ffffff;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.searchSection {
+    overflow: hidden;
+    position: relative;
+    width: 1440px;
+    height: 764px;
+    margin: -1px 0 0 0;
+    z-index: 42;
+}
+
+.pexelsPhoto {
+    position: absolute;
+    width: 1931px;
+    height: 1023px;
+    top: -129px;
+    left: 0;
+    background: var(--images-search) no-repeat center;
+    background-size: cover;
+    z-index: 43;
+}
+
+.vector {
+    position: absolute;
+    width: 1258px;
+    height: 1258px;
+    top: -112px;
+    left: -470px;
+    background: url(../assets/images/66fabe63-8b0e-4602-9927-42db92cf9d22.png) no-repeat center;
+    background-size: cover;
+    z-index: 44;
+}
+
+.breathtakingDestinations {
+    position: absolute;
+    width: 924px;
+    height: 203px;
+    top: 257px;
+    left: 296px;
+    font-family: Kulim Park, var(--default-font-family);
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 72.64px;
+    text-align: center;
+    z-index: 51;
+}
+
+.comeAndSee {
+    position: relative;
+    color: #ffffff;
+    font-family: Kulim Park, var(--default-font-family);
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 72.64px;
+    text-align: center;
+}
+
+.lga {
+    position: relative;
+    color: #3dffa0;
+    font-family: Kulim Park, var(--default-font-family);
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 72.64px;
+    text-align: center;
+}
+
+.ria {
+    position: relative;
+    color: #ff5b5b;
+    font-family: Kulim Park, var(--default-font-family);
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 72.64px;
+    text-align: center;
+}
+
+.hasToOffer {
+    position: relative;
+    color: #ffffff;
+    font-family: Kulim Park, var(--default-font-family);
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 72.64px;
+    text-align: center;
+}
+
+.search {
+    position: absolute;
+    width: 598px;
+    height: 84px;
+    top: 518px;
+    left: 422px;
+    z-index: 45;
+}
+
+.rectangle1 {
+    position: absolute;
+    width: 598px;
+    height: 84px;
+    top: 0;
+    left: 0;
+    background: #a74747;
+    border: 4px solid #000000;
+    z-index: 46;
+    border-radius: 20px;
+}
+
+.searchButton {
+    position: absolute;
+    width: 50.258px;
+    height: 50.258px;
+    top: 16.258px;
+    left: 525px;
+    background: url(../assets/images/96760000-8371-49fa-b8cf-f3f699eee718.png) no-repeat center;
+    background-size: cover;
+    z-index: 47;
+}
+
+.searchTextbox {
+    position: absolute;
+    width: 375px;
+    height: 49px;
+    top: 18px;
+    left: 20px;
+    cursor: pointer;
+    font-size: 0px;
+    background: transparent;
+    border: none;
+    z-index: 48;
+}
+
+.searchADestination {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    width: 374px;
+    height: 49px;
+    margin: 0 0 0 0;
+    color: #76789f;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    z-index: 50;
+}
+
+.rectangle2 {
+    position: absolute;
+    width: 375px;
+    height: 49px;
+    top: 0;
+    left: 0;
+    background: #d9d9d9;
+    border: 2px solid #131b1b;
+    z-index: 49;
+    box-sizing: content-box;
+}
+
+.destinationsSection {
+    overflow: hidden;
+    position: relative;
+    width: 1440px;
+    height: 1371px;
+    margin: 0 0 0 0;
+}
+
+.ellipse {
+    position: absolute;
+    width: 430px;
+    height: 430px;
+    top: -206px;
+    left: 1224px;
+    background: url(../assets/images/fdfcb90a-ec7d-43ec-9184-b39d9dd4308a.png) no-repeat center;
+    background-size: cover;
+    z-index: 3;
+    border-radius: 50%;
+}
+
+.background {
+    position: absolute;
+    width: 1440px;
+    height: 1371px;
+    top: 0;
+    left: 0;
+    background: url(../assets/images/3a688d25-7746-4343-b0cb-ba964a38c9be.png) no-repeat center;
+    background-size: cover;
+    z-index: 1;
+    background: linear-gradient(135deg, rgba(42, 74, 124, 1) 0%, rgba(116, 58, 117, 1) 100%);
+}
+
+.destinationsHeading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    width: 680px;
+    height: 133px;
+    top: 40px;
+    left: 40px;
+    z-index: 38;
+}
+
+.line {
+    position: absolute;
+    width: 100%;
+    height: 6px;
+    background-color: white;
+    z-index: 40;
+    bottom: 0;
+}
+
+.cities {
+    width: 664px;
+    color: #ffffff;
+    font-family: Inter, var(--default-font-family);
+    font-size: 64px;
+    font-weight: bold;
+}
+
+.chose {
+    position: absolute;
+    width: 72px;
+    height: 72px;
+    padding: 0px;
+    background: var(--images-choose) no-repeat;
+    border: none !important;
+    background-size: 80% 80%;
+    background-position: center;
+    z-index: 41;
+}
+
+.dropdown {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.dropdownButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdownMenu {
+    width: 100%;
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.dropdownContent {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+    border-radius: 10px;
+    position: absolute;
+    gap: 14px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    background: linear-gradient(45deg, rgba(85, 235, 181, 0.9) 0%, rgba(35, 44, 238, 0.9) 100%);
+}
+
+.dropdownContent a {
+    display: block;
+    font-size: 24px;
+    font-family: Josefin Slab, var(--default-font-family);
+    color: white;
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.5));
+    text-align: center;
+}
+
+.frame {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    position: absolute;
+    width: 1386px;
+    height: 1032px;
+    top: 240px;
+    left: 28px;
+    z-index: 4;
+}
+
+.backIcon {
+    flex-shrink: 0;
+    position: relative;
+    width: 92px;
+    height: 92px;
+    background: url(../assets/images/6a12c4f1-7077-40f3-a5c9-11035ba5683e.png) no-repeat center;
+    background-size: cover;
+    z-index: 5;
+}
+
+.frame3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    width: 1160px;
+    height: 1032px;
+    z-index: 6;
+}
+
+.row {
+    flex-grow: 1;
+    gap: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-block: 1rem;
+}
+
+.elementContainer {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.destinationContainer {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background: url("https://fakeimg.pl/400x600");
+    background-position: center;
+}
+
+.linkButton {
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+.elementBorder {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-style: solid;
+    border-width: 10px;
+    border-image:
+        linear-gradient(rgba(255, 247, 226, 0.6),
+            rgba(255, 169, 141, 0.6)) 2;
+    /* border-image: linear-gradient(45deg, rgba(255, 247, 226, 0.6) 0%, rgba(255, 169, 141, 0.6) 100%) solid 10px; */
+}
+
+.nextIcon {
+    flex-shrink: 0;
+    position: relative;
+    width: 92px;
+    height: 92px;
+    background: url(../assets/images/31cb0f61c9b74609fd97ebf464d83c92b5384e6f.png) no-repeat center;
+    background-size: cover;
+    z-index: 37;
+}
+
+.ellipse20 {
+    position: absolute;
+    width: 682px;
+    height: 682px;
+    top: 863px;
+    left: -106px;
+    background: url(../assets/images/f2ce351d-633a-4c3a-b68b-c897bcdb9278.png) no-repeat center;
+    background-size: cover;
+    z-index: 2;
+    border-radius: 50%;
+}

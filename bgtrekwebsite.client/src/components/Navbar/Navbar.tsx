@@ -1,49 +1,11 @@
 import React, { useEffect, useState, useRef } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Dropdown from "react-bootstrap/Dropdown";
 import styles from "./Navbar.module.css";
 
 export default function Navbar() {
-  const [aboutUsIsOpen, setAboutUsIsOpen] = useState(false);
-  const dropdownRef = useRef<HTMLDivElement>(null);
-
-  const handleButtonClick = () => {
-    if (dropdownRef.current) {
-      if (aboutUsIsOpen) {
-        setAboutUsIsOpen(false);
-      } else {
-        setAboutUsIsOpen(true);
-      }
-    }
-  };
-
-  const handleOutsideClick = (event: MouseEvent) => {
-    if (
-      dropdownRef.current &&
-      !dropdownRef.current.contains(event.target as Node)
-    ) {
-      setAboutUsIsOpen(false);
-    }
-  };
-
-  useEffect(() => {
-    console.log(aboutUsIsOpen);
-    console.log(dropdownRef.current);
-    if (dropdownRef.current) {
-      aboutUsIsOpen
-        ? (dropdownRef.current.style.display = "flex")
-        : (dropdownRef.current.style.display = "none");
-    }
-  }, [aboutUsIsOpen]);
-
-  useEffect(() => {
-    document.addEventListener("mousedown", handleOutsideClick);
-
-    return () => {
-      document.removeEventListener("mousedown", handleOutsideClick);
-    };
-  }, []);
-
   return (
-    <div id={styles.navbar} className={styles.mainContainer}>
+    <nav id={styles.navbar} className={styles.mainContainer}>
       <div className={styles.navbarBackground} />
       <div className={styles.homeButton}>
         <a className={styles.bgTrek} href="/home">
@@ -79,20 +41,24 @@ export default function Navbar() {
         <a className={styles.navbarButton} href="/store">
           Store
         </a>
-        <div className={styles.dropdown}>
-          <button
-            onClick={handleButtonClick}
+        <Dropdown className={styles.dropdown}>
+          <Dropdown.Toggle
+            variant="success"
+            id="dropdown-basic"
             className={`${styles.navbarButton} ${styles.dropdownButton}`}
           >
-            About us
-          </button>
-          <div className={styles.dropdownContent} ref={dropdownRef}>
-            <a href="/company">Our Company</a>
-            <div className={styles.line}></div>
-            <a href="/contacts">Contact Us</a>
-          </div>
-        </div>
+            About Us
+          </Dropdown.Toggle>
+
+          <Dropdown.Menu className={styles.dropdownMenu}>
+            <div className={styles.dropdownContent}>
+              <Dropdown.Item href="/company">Our Company</Dropdown.Item>
+              <div className={styles.line}></div>
+              <Dropdown.Item href="/contacts">Contact Us</Dropdown.Item>
+            </div>
+          </Dropdown.Menu>
+        </Dropdown>
       </div>
-    </div>
+    </nav>
   );
 }

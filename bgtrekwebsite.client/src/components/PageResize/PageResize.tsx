@@ -8,6 +8,8 @@ export default function PageResize({
 }) {
   const scaleRef = useRef<HTMLDivElement | null>(null);
   const contentRef = useRef<HTMLDivElement | null>(null);
+  const [scaleValue, setScaleValue] = useState<number>(1);
+  const [scrollDist, setScrollDist] = useState<number>(0);
 
   const [scaleContainerWidth, setScaleContainerWidth] = useState<number>(
     Number(scaleRef.current?.offsetWidth)
@@ -21,6 +23,7 @@ export default function PageResize({
       const contentWidth: number = Number(contentElement?.offsetWidth);
       const contentHeight: number = Number(contentElement?.offsetHeight);
       const scaleFactor = Number(scaleContainerWidth) / contentWidth;
+      setScaleValue(scaleFactor);
       contentElement.style.transform = `scale(${scaleFactor}) `;
 
       if (scaleElement) {
@@ -29,12 +32,23 @@ export default function PageResize({
     }
   };
 
-  useEffect(() => {});
+  useEffect(() => {
+    document
+      .getElementsByTagName("nav")[0]
+      .style.setProperty(
+        "top",
+        Math.abs(scrollDist - scrollDist / scaleValue).toString() + "px"
+      );
+  }, [scrollDist]);
 
   //Scale page so that it is always visible no matter browser size
   useEffect(() => {
     scalePage();
   }, [scaleContainerWidth]);
+
+  useEffect(() => {
+    console.log(scrollDist);
+  }, [scrollDist]);
 
   //Add event listeners to update values on window change
   useEffect(() => {
@@ -42,10 +56,16 @@ export default function PageResize({
       setScaleContainerWidth(Number(scaleRef.current?.offsetWidth));
     };
 
+    const handleScroll = () => {
+      setScrollDist(window.scrollY);
+    };
+
     window.addEventListener("resize", handleResize);
+    document.addEventListener("scroll", handleScroll);
 
     return () => {
       window.removeEventListener("resize", handleResize);
+      document.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
