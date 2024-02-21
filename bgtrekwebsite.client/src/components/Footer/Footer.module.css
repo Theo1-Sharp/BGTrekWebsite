@@ -1,12 +1,12 @@
 .mainContainer {
     overflow: hidden;
 
-    --images-background: url("/src/assets//images/pages/footer/minimalist-abstract-mountain-landscape-modern-vector-41276987.png");
-    --images-contact: url("/src/assets/images/pages/footer/contact.png");
-    --images-twitter: url("/src/assets/images/pages/footer/twitter.png");
-    --images-instagram: url("/src/assets/images/pages/footer/instagram.png");
-    --images-facebook: url("/src/assets/images/pages/footer/facebook.png");
-    --images-linkedin: url("/src/assets/images/pages/footer/linkedin-logo.png");
+    --images-background: url("/src/assets/images/components/footer/minimalist-abstract-mountain-landscape-modern-vector-41276987.png");
+    --images-contact: url("/src/assets/images/components/footer/contact.png");
+    --images-twitter: url("/src/assets/images/components/footer/twitter.png");
+    --images-instagram: url("/src/assets/images/components/footer/instagram.png");
+    --images-facebook: url("/src/assets/images/components/footer/facebook.png");
+    --images-linkedin: url("/src/assets/images/components/footer/linkedin-logo.png");
 }
 
 .mainContainer,
@@ -110,10 +110,11 @@ button {
 
 .contact {
     position: absolute;
-    width: 8.65%;
-    height: 50%;
-    top: 25%;
-    left: 75.41%;
+    width: 80%;
+    height: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
     background: var(--images-contact) no-repeat center;
     background-size: cover;
     z-index: 40;

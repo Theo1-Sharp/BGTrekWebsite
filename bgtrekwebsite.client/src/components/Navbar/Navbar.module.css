@@ -1,3 +1,7 @@
+.mainContainer {
+  --images-cart: url("/src/assets/images/components/navbar/shopping-cart-navbar.png");
+}
+
 .mainContainer,
 .mainContainer * {
   box-sizing: border-box;
@@ -8,10 +12,6 @@ select,
 textarea,
 button {
   outline: 0;
-}
-
-nav {
-  top: var(--navbar-scoll);
 }
 
 .mainContainer {
@@ -239,7 +239,7 @@ nav {
   position: relative;
   width: 48px;
   height: 48px;
-  background: url("/src/assets/images/icons/shopping-cart-navbar.png") no-repeat center;
+  background: var(--images-cart) no-repeat center;
   background-size: 65% 65%;
   background-color: rgba(57, 157, 107, 0.2);
   border-radius: 50%;
@@ -302,19 +302,19 @@ nav {
   gap: 14px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
-  background: linear-gradient(45deg, rgba(85, 235, 181, 0.9) 0%, rgba(35, 44, 238, 0.9) 100%);
+  background: linear-gradient(135deg, rgba(85, 235, 181, 0.9) 0%, rgba(35, 44, 238, 0.9) 100%);
 }
 
 .dropdownContent a {
   display: block;
-  font-size: 24px;
+  font-size: 2rem;
   font-family: Josefin Slab, var(--default-font-family);
   color: white;
   filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.5));
   text-align: center;
 }
 
-.line {
+.dropdownLine {
   height: 0;
   width: 90%;
   border-top: 4px dashed rgba(255, 255, 255, 0.6);

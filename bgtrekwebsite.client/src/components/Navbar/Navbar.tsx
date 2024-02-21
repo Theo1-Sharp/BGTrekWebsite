@@ -53,7 +53,7 @@ export default function Navbar() {
           <Dropdown.Menu className={styles.dropdownMenu}>
             <div className={styles.dropdownContent}>
               <Dropdown.Item href="/company">Our Company</Dropdown.Item>
-              <div className={styles.line}></div>
+              <div className={styles.dropdownLine}></div>
               <Dropdown.Item href="/contacts">Contact Us</Dropdown.Item>
             </div>
           </Dropdown.Menu>

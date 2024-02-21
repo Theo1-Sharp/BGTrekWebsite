@@ -10,14 +10,15 @@ export default function Footer() {
       <div className={styles.footerContactUs}>
         <div className={styles.rectangle} />
         <p className={styles.contactUsHeading}>CONTACT US</p>
-        <div className={styles.rectangle1} />
-        <div className={styles.contact} />
+        <a className={styles.rectangle1} href="/contacts">
+          <div className={styles.contact} />
+        </a>
       </div>
       <div className={styles.footerLeftSection}>
         <div className={styles.navigationLinks}>
           <div className={styles.row}>
             <div className={styles.blogsSection}>
-              <a className={styles.blogs}>Blogs</a>
+              <span className={styles.blogs}>Blogs</span>
               <div className={styles.verticalContainer}>
                 <a className={styles.ourBlogs} href="/blogs">
                   Our Blogs

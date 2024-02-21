@@ -32,23 +32,20 @@ export default function PageResize({
     }
   };
 
+  //Fix navbar not sticking to top properly due to scale
   useEffect(() => {
     document
       .getElementsByTagName("nav")[0]
       .style.setProperty(
         "top",
-        Math.abs(scrollDist - scrollDist / scaleValue).toString() + "px"
+        (scrollDist / scaleValue - scrollDist).toString() + "px"
       );
-  }, [scrollDist]);
+  }, [scrollDist, scaleContainerWidth]);
 
   //Scale page so that it is always visible no matter browser size
   useEffect(() => {
     scalePage();
   }, [scaleContainerWidth]);
-
-  useEffect(() => {
-    console.log(scrollDist);
-  }, [scrollDist]);
 
   //Add event listeners to update values on window change
   useEffect(() => {

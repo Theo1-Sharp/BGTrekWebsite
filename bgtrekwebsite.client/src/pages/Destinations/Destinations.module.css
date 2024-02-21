@@ -1,8 +1,11 @@
 .mainContainer {
     overflow: hidden;
-    --images-search: url("/src/assets/images/pages/destinations/pexels-photo-1634840.jpeg");
+    --images-background: url("/src/assets/images/pages/destinations/pexels-photo-1634840.jpeg");
     --images-arrow: url("/src/assets/images/pages/destinations/double-arrow.png");
     --images-choose: url("/src/assets/images/pages/destinations/list.png");
+    --images-location: url("/src/assets/images/pages/destinations/35_1.jpg");
+    --images-vector: url("/src/assets/images/pages/destinations/Vector.svg");
+    --images-search: url("/src/assets/images/pages/destinations/search.png");
 }
 
 .mainContainer,
@@ -40,7 +43,7 @@ button {
     height: 1023px;
     top: -129px;
     left: 0;
-    background: var(--images-search) no-repeat center;
+    background: var(--images-background) no-repeat center;
     background-size: cover;
     z-index: 43;
 }
@@ -51,7 +54,7 @@ button {
     height: 1258px;
     top: -112px;
     left: -470px;
-    background: url(../assets/images/66fabe63-8b0e-4602-9927-42db92cf9d22.png) no-repeat center;
+    background: var(--images-vector) no-repeat center;
     background-size: cover;
     z-index: 44;
 }
@@ -119,6 +122,11 @@ button {
     z-index: 45;
 }
 
+.search form {
+    width: 100%;
+    height: 100%;
+}
+
 .rectangle1 {
     position: absolute;
     width: 598px;
@@ -131,28 +139,45 @@ button {
     border-radius: 20px;
 }
 
-.searchButton {
+.searchButtonBackground {
     position: absolute;
-    width: 50.258px;
-    height: 50.258px;
-    top: 16.258px;
+    background-color: #131B3A;
+    border-radius: 20%;
+    border: white 3px dashed;
+    width: 3.5rem;
+    height: 3.5rem;
     left: 525px;
-    background: url(../assets/images/96760000-8371-49fa-b8cf-f3f699eee718.png) no-repeat center;
-    background-size: cover;
+    top: 50%;
+    transform: translateY(-50%);
     z-index: 47;
 }
 
+.searchButton {
+    width: 100%;
+    height: 100%;
+    background: var(--images-search) no-repeat center;
+    background-size: 90% 90%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
 .searchTextbox {
+    text-indent: 0.2em;
     position: absolute;
     width: 375px;
     height: 49px;
     top: 18px;
     left: 20px;
-    cursor: pointer;
-    font-size: 0px;
-    background: transparent;
-    border: none;
+    font-size: 2em;
+    font-family: Kulim Park, var(--default-font-family);
+    background: white;
+    border: 2px solid #131b1b;
     z-index: 48;
+}
+
+.searchTextbox::placeholder {
+    color: #b8b9cf;
 }
 
 .searchADestination {
@@ -198,7 +223,8 @@ button {
     height: 430px;
     top: -206px;
     left: 1224px;
-    background: url(../assets/images/fdfcb90a-ec7d-43ec-9184-b39d9dd4308a.png) no-repeat center;
+    background-color: #ED4444;
+    opacity: 20%;
     background-size: cover;
     z-index: 3;
     border-radius: 50%;
@@ -258,27 +284,34 @@ button {
 }
 
 .dropdown {
-    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1/1;
+    height: 50%;
 }
 
 .dropdownButton {
-    background: none;
+    background: var(--images-choose) no-repeat;
     border: none;
-    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    background-size: 80% 80%;
+    background-position: center;
+    border-radius: 10px;
 }
 
 .dropdownMenu {
+    inset: 0 auto !important;
     width: 100%;
     padding: 0;
     border: none;
     background: none;
+    transform: none;
 }
 
 .dropdownContent {
+    top: 0.5rem;
     padding: 0.5rem;
     display: flex;
     flex-direction: column;
@@ -291,16 +324,22 @@ button {
     gap: 14px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    background: linear-gradient(45deg, rgba(85, 235, 181, 0.9) 0%, rgba(35, 44, 238, 0.9) 100%);
+    background: linear-gradient(135deg, rgba(243, 83, 83, 0.9) 0%, rgba(35, 44, 238, 0.9) 100%);
 }
 
 .dropdownContent a {
     display: block;
-    font-size: 24px;
+    font-size: 2rem;
     font-family: Josefin Slab, var(--default-font-family);
     color: white;
     filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.5));
     text-align: center;
+}
+
+.dropdownLine {
+    height: 0;
+    width: 90%;
+    border-top: 4px dashed rgba(255, 255, 255, 0.6);
 }
 
 .frame {
@@ -321,7 +360,8 @@ button {
     position: relative;
     width: 92px;
     height: 92px;
-    background: url(../assets/images/6a12c4f1-7077-40f3-a5c9-11035ba5683e.png) no-repeat center;
+    background: var(--images-arrow) no-repeat center;
+    transform: rotate(180deg);
     background-size: cover;
     z-index: 5;
 }
@@ -360,16 +400,42 @@ button {
     height: 100%;
     width: 100%;
     position: relative;
-    background: url("https://fakeimg.pl/400x600");
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 20%, rgba(0, 0, 0, 0) 50%), var(--images-location);
     background-position: center;
+    background-size: 200%;
+    box-shadow: inset 0px 0px 40px 10px rgba(0, 0, 0, 0.7);
+}
+
+.linkButtonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    position: absolute;
+    bottom: 15%;
+    transform: translateX(-50%);
+    left: 50%;
+    background-color: rgba(72, 207, 158, 0.8);
+    box-shadow: 0px 0.5rem 0px 0px rgba(23, 78, 59, 0.8);
+    width: 70%;
+    border-radius: 30px;
+    padding: 0.5rem;
+}
+
+.linkButtonContainer:hover {
+    background-color: rgba(67, 227, 233, 0.8);
+
 }
 
 .linkButton {
-    z-index: 1;
-    position: absolute;
-    bottom: 0;
-    transform: translateX(-50%);
-    left: 50%;
+    color: white;
+    font-size: 2em;
+    font-family: Koulen, var(--default-font-family);
+    text-shadow: 4px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 0.2rem;
+    text-align: center;
+    width: 100%;
+    word-wrap: break-word;
 }
 
 .elementBorder {
@@ -389,18 +455,19 @@ button {
     position: relative;
     width: 92px;
     height: 92px;
-    background: url(../assets/images/31cb0f61c9b74609fd97ebf464d83c92b5384e6f.png) no-repeat center;
+    background: var(--images-arrow) no-repeat center;
     background-size: cover;
     z-index: 37;
 }
 
-.ellipse20 {
+.ellipse2 {
     position: absolute;
     width: 682px;
     height: 682px;
     top: 863px;
     left: -106px;
-    background: url(../assets/images/f2ce351d-633a-4c3a-b68b-c897bcdb9278.png) no-repeat center;
+    background-color: #33A96B;
+    opacity: 20%;
     background-size: cover;
     z-index: 2;
     border-radius: 50%;

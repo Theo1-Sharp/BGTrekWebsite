@@ -8,7 +8,7 @@ export default function Destinations() {
     <div className={styles.mainContainer}>
       <div className={styles.searchSection}>
         <div className={styles.pexelsPhoto} />
-        <div className={styles.vector} />
+        <svg className={styles.vector} />
         <div className={styles.breathtakingDestinations}>
           <span className={styles.comeAndSee}>
             Come and see
@@ -23,13 +23,19 @@ export default function Destinations() {
         </div>
         <div className={styles.search}>
           <div className={styles.rectangle1} />
-          <div className={styles.searchButton} />
-          <button className={styles.searchTextbox}>
-            <span className={styles.searchADestination}>
-              Search A Destination ...
-            </span>
-            <div className={styles.rectangle2} />
-          </button>
+          <form action="/destinations" method="get">
+            <input
+              type="text"
+              name="search"
+              id="search"
+              required
+              className={styles.searchTextbox}
+              placeholder="Search A Destination ..."
+            />
+            <button type="submit" className={styles.searchButtonBackground}>
+              <div className={styles.searchButton} />
+            </button>
+          </form>
         </div>
       </div>
       <div className={styles.destinationsSection}>
@@ -42,22 +48,24 @@ export default function Destinations() {
             <Dropdown.Toggle
               variant="success"
               id="dropdown-basic"
-              className={styles.chose}
+              className={styles.dropdownButton}
             ></Dropdown.Toggle>
 
-            <div className={styles.dropdownMenu}>
-              <Dropdown.Menu>
-                <div className={styles.dropdownContent}>
-                  <Dropdown.Item href="/company">Our Company</Dropdown.Item>
-                  <div className={styles.line}></div>
-                  <Dropdown.Item href="/contacts">Contact Us</Dropdown.Item>
-                </div>
-              </Dropdown.Menu>
-            </div>
+            <Dropdown.Menu className={styles.dropdownMenu}>
+              <div className={styles.dropdownContent}>
+                <Dropdown.Item href="/company">Cities</Dropdown.Item>
+                <div className={styles.dropdownLine} />
+                <Dropdown.Item href="/contacts">Villages</Dropdown.Item>
+                <div className={styles.dropdownLine} />
+                <Dropdown.Item href="/contacts">Resorts</Dropdown.Item>
+                <div className={styles.dropdownLine} />
+                <Dropdown.Item href="/contacts">Landmarks</Dropdown.Item>
+              </div>
+            </Dropdown.Menu>
           </Dropdown>
         </div>
         <div className={styles.frame}>
-          <div className={styles.backIcon} />
+          <a className={styles.backIcon} href="/destinations" />
           <div className={styles.frame3}>
             {Array.from({ length: 2 }).map((_, rowIndex) => (
               <div className={styles.row} key={`row-${rowIndex}`}>
@@ -67,9 +75,11 @@ export default function Destinations() {
                     key={`container-${rowIndex}-${elementIndex}`}
                   >
                     <div className={styles.destinationContainer}>
-                      <a className={styles.linkButton} href="/">
-                        RUSE
-                      </a>
+                      <div className={styles.linkButtonContainer}>
+                        <a className={styles.linkButton} href="/destinations">
+                          RUSE
+                        </a>
+                      </div>
                     </div>
                     <div className={styles.elementBorder}></div>
                   </div>
@@ -77,9 +87,9 @@ export default function Destinations() {
               </div>
             ))}
           </div>
-          <div className={styles.nextIcon} />
+          <a className={styles.nextIcon} href="/destinations" />
         </div>
-        <div className={styles.ellipse20} />
+        <div className={styles.ellipse2} />
       </div>
     </div>
   );
