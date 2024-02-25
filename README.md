@@ -38,6 +38,7 @@ This project uses the following technologies:
 - Add Pages
 - Add Authentication & Authorization
 - Add MySQL database
+- Add Docker support
 - Host website with a given domain
 
 ## Contributors
