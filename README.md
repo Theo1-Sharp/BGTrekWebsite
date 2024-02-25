@@ -14,8 +14,12 @@ This project uses the following technologies:
 ## Dependencies
 - React
   - bgtrekwebsite.client
-    - react-router-dom
     - react-query
+    - bootstrap
+    - react
+    - react-bootstrap
+    - react-dom
+    - react-router-dom
 - ASP.NET Core
   - BGTrekWebsite.Server
     * Top-level packages:
