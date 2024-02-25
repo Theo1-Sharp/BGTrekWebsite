@@ -1,0 +1,20 @@
+## Dependencies
+- React
+  - bgtrekwebsite.client
+    - react-query
+    - bootstrap
+    - react
+    - react-bootstrap
+    - react-dom
+    - react-router-dom
+- ASP.NET Core
+  - BGTrekWebsite.Server
+    * Top-level packages:
+      - Microsoft.AspNetCore.SpaProxy
+      - Swashbuckle.AspNetCore
+    * Transitive packages:
+      - Microsoft.Extensions.ApiDescription.Server
+      - Microsoft.OpenApi
+      - Swashbuckle.AspNetCore.Swagger
+      - Swashbuckle.AspNetCore.SwaggerGen
+      - Swashbuckle.AspNetCore.SwaggerUI
