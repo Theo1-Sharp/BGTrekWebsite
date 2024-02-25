@@ -25,12 +25,6 @@ This project uses the following technologies:
     * Top-level packages:
       - Microsoft.AspNetCore.SpaProxy
       - Swashbuckle.AspNetCore
-    * Transitive packages:
-      - Microsoft.Extensions.ApiDescription.Server
-      - Microsoft.OpenApi
-      - Swashbuckle.AspNetCore.Swagger
-      - Swashbuckle.AspNetCore.SwaggerGen
-      - Swashbuckle.AspNetCore.SwaggerUI
 
 ## TO DO
 
@@ -38,6 +32,7 @@ This project uses the following technologies:
 - Add Pages
 - Add Authentication & Authorization
 - Add MySQL database
+- Add Docker support
 - Host website with a given domain
 
 ## Contributors
