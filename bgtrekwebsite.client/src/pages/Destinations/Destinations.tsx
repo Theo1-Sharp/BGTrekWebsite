@@ -53,13 +53,13 @@ export default function Destinations() {
 
             <Dropdown.Menu className={styles.dropdownMenu}>
               <div className={styles.dropdownContent}>
-                <Dropdown.Item href="/company">Cities</Dropdown.Item>
+                <Dropdown.Item href="/destinations">Cities</Dropdown.Item>
                 <div className={styles.dropdownLine} />
-                <Dropdown.Item href="/contacts">Villages</Dropdown.Item>
+                <Dropdown.Item href="/destinations">Villages</Dropdown.Item>
                 <div className={styles.dropdownLine} />
-                <Dropdown.Item href="/contacts">Resorts</Dropdown.Item>
+                <Dropdown.Item href="/destinations">Resorts</Dropdown.Item>
                 <div className={styles.dropdownLine} />
-                <Dropdown.Item href="/contacts">Landmarks</Dropdown.Item>
+                <Dropdown.Item href="/destinations">Landmarks</Dropdown.Item>
               </div>
             </Dropdown.Menu>
           </Dropdown>
@@ -76,7 +76,7 @@ export default function Destinations() {
                   >
                     <div className={styles.destinationContainer}>
                       <div className={styles.linkButtonContainer}>
-                        <a className={styles.linkButton} href="/destinations">
+                        <a className={styles.linkButton} href="/location">
                           RUSE
                         </a>
                       </div>

@@ -21,7 +21,7 @@ a:link,
 a:visited,
 a:hover,
 a:active {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 a:hover {
@@ -32,6 +32,10 @@ a:hover {
 a:active {
     filter:
         brightness(150%) contrast(150%);
+}
+
+p {
+    margin: 0 !important;
 }
 
 body {

@@ -1,0 +1,625 @@
+:root {
+    --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+        "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+        "Source Han Sans CN", sans-serif;
+}
+
+.mainContainer {
+    overflow: hidden;
+
+    --images-background: url("/src/assets/images/pages/store/tourism-concept-traveler-background-travel-around-world-flat-lay-style-tourist-accessories-souvenirs-green-wooden-background-top-view_175682-17942.jpeg");
+    --images-sort: url("/src/assets/images/pages/store/list.png");
+    --images-filter: url("/src/assets/images/pages/store/filter.png");
+    --images-categories: url("/src/assets/images/pages/store/category.png");
+    --images-arrow: url("/src/assets/images/pages/store/arrow-right.png");
+    --images-shirt: url("/src/assets/images/pages/store/B1rRKBtT74S._CLa\ 2140\,2000\ 61m5gyqEVDL.png\ 0\,0\,2140\,2000+0.0\,0.0\,2140.0\,2000.0_AC_SX522_.png");
+}
+
+.mainContainer,
+.mainContainer * {
+    box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button {
+    outline: 0;
+}
+
+.mainContainer {
+    position: relative;
+    width: 1440px;
+    margin: 0 auto;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.tourismConceptTravelerBackground {
+    position: relative;
+    width: 1440px;
+    height: 734px;
+    margin: -2px 0 0 0;
+    background: var(--images-background) no-repeat center;
+    background-size: cover;
+    z-index: 1;
+}
+
+.souvenirs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 608px;
+    height: 249px;
+    top: 190px;
+    left: 417px;
+    color: #ffffff;
+    font-family: Koulen, var(--default-font-family);
+    font-size: 128px;
+    font-weight: 400;
+    line-height: 231.25px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 91;
+    text-shadow: 4px 4px 10px #000000;
+}
+
+.souvenirsForThrilledTravelleres {
+    position: relative;
+    width: 770px;
+    height: 84px;
+    margin: 86px 0 0 67px;
+    font-family: Kulim Park, var(--default-font-family);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 54.48px;
+    text-align: left;
+    z-index: 90;
+}
+
+.souvenirsForThrilled {
+    position: relative;
+    color: #000000;
+    font-family: Kulim Park, var(--default-font-family);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 54.48px;
+    text-align: left;
+}
+
+.travelleres {
+    position: relative;
+    color: #000000;
+    font-family: Kulim Park, var(--default-font-family);
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 54.48px;
+    text-align: left;
+}
+
+.getYourselfSome {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    width: 811px;
+    height: 130px;
+    margin: 0 0 0 67px;
+    color: #000000;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+    z-index: 89;
+}
+
+.storeSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 32px;
+    width: 1440px;
+    height: 798px;
+    top: 1131px;
+    left: 0;
+    z-index: 2;
+}
+
+.line {
+    flex-shrink: 0;
+    position: relative;
+    width: 960px;
+    height: 2px;
+    border: solid 2px #205632;
+    z-index: 3;
+}
+
+.frame {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-self: stretch;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    position: relative;
+    min-width: 0;
+    z-index: 4;
+}
+
+.frame1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    align-self: stretch;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    position: relative;
+    width: 400px;
+    padding: 16px 32px 16px 32px;
+    z-index: 5;
+    overflow: hidden;
+}
+
+.group {
+    flex-shrink: 0;
+    position: relative;
+    width: 336px;
+    height: 367px;
+    z-index: 6;
+}
+
+.sideButton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    position: relative;
+    width: 100%;
+    height: 3rem;
+    margin-block: 0.5rem;
+    z-index: 14;
+    background: linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 6px) calc(100% - 6px) no-repeat,
+        linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 50%);
+    border-radius: 0px;
+    padding: 7px;
+    box-sizing: border-box;
+    border: unset;
+}
+
+.sideButton:hover {
+    background: #121B3A;
+}
+
+.sideButton:hover * {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(1%) hue-rotate(56deg) brightness(106%) contrast(101%);
+}
+
+.sort2 {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 41px;
+    color: #2b2c56;
+    font-family: Kulim Park, var(--default-font-family);
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 41px;
+    text-align: left;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 8;
+}
+
+.list {
+    aspect-ratio: 1/1;
+    flex-shrink: 0;
+    position: relative;
+    width: auto;
+    height: 100%;
+    background: var(--images-sort) no-repeat center;
+    background-size: 70%;
+    z-index: 9;
+}
+
+.filterButton {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-self: stretch;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    position: relative;
+    min-width: 0;
+    padding: 8px 8px 8px 8px;
+    background: linear-gradient(180deg, #fafafa, rgba(255, 255, 255, 0));
+    z-index: 11;
+    overflow: hidden;
+}
+
+.filter3 {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 41px;
+    color: #2b2c56;
+    font-family: Kulim Park, var(--default-font-family);
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 41px;
+    text-align: left;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 12;
+}
+
+.filter4 {
+    aspect-ratio: 1/1;
+    flex-shrink: 0;
+    position: relative;
+    width: auto;
+    height: 100%;
+    background: var(--images-filter) no-repeat center;
+    background-size: 70%;
+    z-index: 13;
+}
+
+.categories5 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-self: stretch;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    position: relative;
+    min-width: 0;
+    height: 57px;
+    padding: 8px 8px 8px 8px;
+    background: linear-gradient(180deg, #fafafa, rgba(255, 255, 255, 0));
+    z-index: 15;
+    overflow: hidden;
+}
+
+.categories6 {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 41px;
+    color: #2b2c56;
+    font-family: Kulim Park, var(--default-font-family);
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 41px;
+    text-align: left;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 16;
+}
+
+.category {
+    aspect-ratio: 1/1;
+    flex-shrink: 0;
+    position: relative;
+    width: auto;
+    height: 100%;
+    background: var(--images-categories) no-repeat center;
+    background-size: 70%;
+    z-index: 17;
+}
+
+.subButtonContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-block: 1rem;
+}
+
+.subButton {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 20px;
+    width: 100%;
+    padding: 0.25rem;
+    color: #000000;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 1.5em;
+    text-align: center;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 27;
+    background-color: unset;
+    border: unset;
+    border-bottom: none;
+    box-sizing: content-box;
+}
+
+.subButton::after {
+    content: "";
+    bottom: -0.5rem;
+    left: 0;
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background: -webkit-linear-gradient(left, rgba(141, 166, 255, 0) 0%, rgba(141, 166, 255, 1) 20%, rgba(141, 166, 255, 1) 80%, rgba(141, 166, 255, 0) 100%);
+}
+
+.subButton:hover {
+    filter: contrast(150%);
+    font-weight: bold;
+}
+
+.subButton:hover::after {
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
+}
+
+.clothes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    position: relative;
+    width: 240px;
+    z-index: 20;
+    overflow: hidden;
+}
+
+.magnets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    position: relative;
+    width: 240px;
+    z-index: 22;
+    overflow: hidden;
+}
+
+.paintings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    position: relative;
+    width: 240px;
+    z-index: 24;
+    overflow: hidden;
+}
+
+.pottery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    position: relative;
+    width: 240px;
+    z-index: 26;
+    overflow: hidden;
+}
+
+.frameC {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 32px;
+    position: relative;
+    width: 100%;
+    height: 96px;
+    z-index: 28;
+    overflow: hidden;
+}
+
+.arrowLeft {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--images-arrow) no-repeat center;
+    z-index: 31;
+    top: 0;
+    background-size: 80%;
+    transform: rotate(180deg);
+}
+
+.arrowLeft:hover {
+    filter: invert(100%);
+}
+
+.text17 {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 41px;
+    color: #ffffff;
+    font-family: Kulim Park, var(--default-font-family);
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 41px;
+    text-align: left;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 30;
+    margin: 0;
+    text-shadow: rgb(0, 0, 0) 2px 0px 0px, rgb(0, 0, 0) 1.75517px 0.958851px 0px, rgb(0, 0, 0) 1.0806px 1.68294px 0px, rgb(0, 0, 0) 0.141474px 1.99499px 0px, rgb(0, 0, 0) -0.832294px 1.81859px 0px, rgb(0, 0, 0) -1.60229px 1.19694px 0px, rgb(0, 0, 0) -1.97999px 0.28224px 0px, rgb(0, 0, 0) -1.87291px -0.701566px 0px, rgb(0, 0, 0) -1.30729px -1.51361px 0px, rgb(0, 0, 0) -0.421592px -1.95506px 0px, rgb(0, 0, 0) 0.567324px -1.91785px 0px, rgb(0, 0, 0) 1.41734px -1.41108px 0px, rgb(0, 0, 0) 1.92034px -0.558831px 0px,
+        4px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+.pagesButton {
+    background-color: unset;
+    border: unset;
+    padding: 0;
+    position: relative;
+    height: 70%;
+    width: auto;
+    aspect-ratio: 1/1;
+}
+
+.pagesButton:hover {
+    background-color: #205632;
+}
+
+.pagesButtonBackground {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: unset;
+    border: unset;
+    z-index: 32;
+}
+
+.arrowRight {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--images-arrow) no-repeat center;
+    z-index: 31;
+    top: 0;
+    background-size: 80%;
+}
+
+.arrowRight:hover {
+    filter: invert(100%);
+}
+
+.frameD {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 0;
+    gap: 48px;
+    position: relative;
+    padding: 39px 35px 39px 35px;
+    background: #e8eff3;
+    z-index: 32;
+    overflow: hidden;
+}
+
+.productsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 0;
+    gap: 3rem;
+    position: relative;
+    padding: 39px 35px 39px 35px;
+    background: #F3EEE8;
+    z-index: 32;
+    overflow: hidden;
+    height: 100%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.productContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 0.5rem;
+    position: relative;
+    width: 192px;
+    height: 320px;
+    z-index: 33;
+    background: linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 8px) calc(100% - 8px) no-repeat,
+        linear-gradient(0deg, #304078 0%, #ffffff 100%);
+    border-radius: 0px;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.productImage {
+    flex-shrink: 0;
+    position: relative;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    background: var(--images-shirt) no-repeat center;
+    background-size: contain;
+    z-index: 34;
+}
+
+.productName {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    width: 160px;
+    height: 40px;
+    color: #000000;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+    text-transform: capitalize;
+    z-index: 36;
+}
+
+.productPrice {
+    align-self: stretch;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    color: #39456e;
+    font-family: Inter, var(--default-font-family);
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-align: left;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 37;
+}
+
+.buyButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    position: relative;
+    width: 160px;
+    height: 2.5rem;
+    cursor: pointer;
+    background: #3f925b;
+    border: none;
+    z-index: 38;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 24px;
+    color: white;
+}
+
+.buyButton:hover {
+    background: #1d3525;
+}

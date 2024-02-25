@@ -51,6 +51,10 @@ button {
   box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.5) inset;
 }
 
+.homeButton:hover {
+  background: linear-gradient(135deg, #01332d, #054925);
+}
+
 .bgTrek {
   flex-shrink: 0;
   position: relative;
@@ -307,7 +311,7 @@ button {
 
 .dropdownContent a {
   display: block;
-  font-size: 2rem;
+  font-size: 2em;
   font-family: Josefin Slab, var(--default-font-family);
   color: white;
   filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.5));

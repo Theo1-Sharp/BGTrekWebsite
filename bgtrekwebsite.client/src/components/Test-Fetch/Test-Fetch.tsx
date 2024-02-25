@@ -7,7 +7,7 @@ interface Forecast {
   summary: string;
 }
 
-export default function Main() {
+export default function getData() {
   async function fetchWeatherData() {
     const res = await fetch("/api/weatherforecast");
     return res.json();

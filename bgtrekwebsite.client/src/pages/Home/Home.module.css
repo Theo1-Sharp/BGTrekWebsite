@@ -357,16 +357,17 @@ button {
     filter: drop-shadow(0px 8px 0px #376B34);
 }
 
+.button:hover {
+    background: linear-gradient(90deg, rgb(102, 150, 36) 0%, rgb(35, 148, 93) 100%);
+}
+
 .varnaButton {
     position: relative;
-    width: 194.598px;
-    height: 78.882px;
     cursor: pointer;
     color: #ffffff;
     font-family: Kulim Park, var(--default-font-family);
     font-size: 40px;
     font-weight: 700;
-    line-height: 45.4px;
     background: transparent;
     border: none;
     z-index: 21;
@@ -429,6 +430,10 @@ button {
     filter: drop-shadow(0px 8px 0px #8B59C7);
 }
 
+.button7:hover {
+    background: linear-gradient(90deg, rgb(163, 41, 157) 0%, rgb(44, 84, 165) 100%);
+}
+
 .sofiaButton {
     position: relative;
     width: 231.594px;
@@ -482,6 +487,10 @@ button {
     border-top-right-radius: 2rem;
     border-bottom-left-radius: 2rem;
     filter: drop-shadow(0px 8px 0px #8B59C7);
+}
+
+.buttonA:hover {
+    background: linear-gradient(90deg, rgb(163, 41, 157) 0%, rgb(44, 84, 165) 100%);
 }
 
 .plovdivButton {

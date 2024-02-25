@@ -1,0 +1,390 @@
+.mainContainer {
+    overflow: hidden;
+
+    --images-statue: url("/src/assets/images/pages/location/a-stone-statue-of-a-lady-city-background-trees-fauna-sharp-edges-vector-style-firewatch-game-s-470714676.png");
+    --images-centre: url("/src/assets/images/pages/location/34a12eed7b8e9e62d266d31b79d719c969a0284e-106449c54de2f3f40876f391798b6f72.jpg");
+    --images-hexagons: url("/src/assets/images/pages/location/hexagons.png");
+    --images-vector: url("/src/assets/images/pages/location/Vector\ 3.svg");
+    --images-heading: url("/src/assets/images/pages/location/natural-abstract-mountain-landscape-line-art-pattern-contemporary-aesthetic-backgrounds-landscapes-mountains-hill-ocean-269906634.webp");
+    --images-user: url("/src/assets/images/pages/location/user.png");
+    --images-starOn: url("/src/assets/images/pages/location/Star\ On.png");
+    --images-starOff: url("/src/assets/images/pages/location/Star\ Off.png");
+    --images-vector-green: url("/src/assets/images/pages/location/Vector-green.svg");
+    --images-vector-orange: url("/src/assets/images/pages/location/Vector-orange.svg");
+}
+
+.mainContainer,
+.mainContainer * {
+    box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button {
+    outline: 0;
+}
+
+.mainContainer {
+    position: relative;
+    width: 1440px;
+    margin: 0 auto;
+    background: #FAF0EA;
+    overflow: hidden;
+}
+
+.backgroundImage {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: var(--images-hexagons);
+    opacity: 0.1;
+}
+
+.flexRowE {
+    position: relative;
+    width: 1397px;
+    height: 1813.265px;
+    margin: 47px 0 0 0px;
+    z-index: 32;
+}
+
+.heroSection {
+    overflow: hidden;
+    position: absolute;
+    background: var(--images-statue) no-repeat center;
+    background-size: cover;
+    width: 1354px;
+    height: 973px;
+    top: 0;
+    left: 43px;
+    z-index: 17;
+}
+
+.vector {
+    position: absolute;
+    width: 1362px;
+    height: 1129.596px;
+    top: -90.596px;
+    left: -43px;
+    background: var(--images-vector) no-repeat center;
+    background-size: cover;
+    z-index: 19;
+}
+
+.heading {
+    position: absolute;
+    width: 756px;
+    height: 98px;
+    top: 4rem;
+    left: 300px;
+    z-index: 22;
+    border-radius: 10px;
+    background: linear-gradient(0deg, rgba(153, 17, 17, 0.7) 0%, rgba(239, 166, 56, 0.7) 100%);
+    border: black solid 4px;
+    border-radius: 2rem;
+    box-shadow: 0 0.5rem 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.heading>* {
+    border-radius: 2rem;
+}
+
+.ruse {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 395.034px;
+    height: 98px;
+    top: 0;
+    left: 179.758px;
+    color: #ffffff;
+    font-family: Koulen, var(--default-font-family);
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 98px;
+    text-align: center;
+    text-transform: capitalize;
+    white-space: nowrap;
+    letter-spacing: 16px;
+    z-index: 24;
+}
+
+.rectangle1 {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(153, 17, 17, 0.5) 0%, rgba(239, 166, 56, 0.5) 100%);
+    background-size: cover;
+    box-sizing: content-box;
+}
+
+.rectangle2 {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0.5;
+    background: var(--images-heading) no-repeat center;
+}
+
+.text {
+    position: absolute;
+    width: 710px;
+    height: 600px;
+    top: 252px;
+    left: 165px;
+    z-index: 20;
+}
+
+.ruseCityDescription {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    width: 710px;
+    height: 600px;
+    top: 0;
+    left: 0;
+    color: #ffffff;
+    font-family: Kulim Park, var(--default-font-family);
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 45.4px;
+    text-align: left;
+    text-transform: capitalize;
+    z-index: 21;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+.locationSection1 {
+    position: absolute;
+    width: 884.265px;
+    height: 884.265px;
+    top: 929px;
+    left: 0;
+    background: var(--images-vector-green) no-repeat center;
+    background-size: 70%;
+    z-index: 30;
+}
+
+.ruseArchitectureDescription {
+    position: relative;
+    width: 669px;
+    height: 630px;
+    margin: 176.002px 0 0 109px;
+    font-family: Kulim Park, var(--default-font-family);
+    font-size: 40px;
+    line-height: 60px;
+    text-align: left;
+    z-index: 31;
+}
+
+.img4 {
+    position: absolute;
+    width: 456px;
+    height: 456px;
+    top: 1151.002px;
+    left: 876px;
+    background: var(--images-centre) no-repeat center;
+    background-size: cover;
+    border: solid #366388 1rem;
+    z-index: 32;
+    box-sizing: content-box;
+}
+
+.vectorOrange {
+    position: absolute;
+    width: 332px;
+    height: 332px;
+    top: 1403px;
+    left: 772px;
+    background: var(--images-vector-orange) no-repeat center;
+    background-size: cover;
+    z-index: 29;
+}
+
+.line {
+    position: absolute;
+    width: 970px;
+    height: 8px;
+    top: 1782px;
+    left: 235px;
+    z-index: 28;
+    border: #035F55 4px dashed;
+}
+
+.ruseLocation {
+    position: relative;
+    width: 1223px;
+    height: 420px;
+    margin: 46.735px 0 0 109px;
+    font-family: Kulim Park, var(--default-font-family);
+    font-size: 40px;
+    line-height: 60px;
+    text-align: left;
+    z-index: 27;
+}
+
+.flexRow {
+    position: relative;
+    width: 1440px;
+    margin: 87px 0 0 0;
+    z-index: 26;
+    overflow: visible auto;
+}
+
+.line12 {
+    position: relative;
+    width: 970px;
+    margin: 0 0 0 235px;
+    border: #035F55 4px dashed;
+    z-index: 26;
+}
+
+.commentSection {
+    padding-block: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 32px;
+    width: 1440px;
+}
+
+.addComment {
+    flex-shrink: 0;
+    position: relative;
+    width: 520px;
+    height: 96px;
+    font-family: Koulen, var(--default-font-family);
+    font-size: 48px;
+    font-weight: 400;
+    color: #ffffff;
+    background: transparent;
+    border: none;
+    text-align: center;
+    z-index: 1;
+    border-radius: 20px;
+    background: linear-gradient(90deg, rgba(51, 169, 107, 0.6) 0%, rgba(138, 169, 51, 0.6) 100%);
+    border: solid #121B3A 8px;
+    box-shadow: 0px 8px 0px #2A7C51;
+}
+
+.comment {
+    flex-shrink: 0;
+    position: relative;
+    width: 1312px;
+    z-index: 4;
+}
+
+.commentHeading {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 16px;
+    position: relative;
+    width: 1312px;
+    height: 96px;
+    margin: 0 0 0 0;
+    background: linear-gradient(180deg,
+            rgba(255, 255, 255, 0.15),
+            rgba(67, 173, 135, 0.15));
+    z-index: 8;
+}
+
+.userImage {
+    aspect-ratio: 1/1;
+    flex-shrink: 0;
+    position: relative;
+    width: auto;
+    height: 80%;
+    margin-left: 1rem;
+    background: var(--images-user) no-repeat center;
+    background-size: cover;
+    z-index: 9;
+}
+
+.userName {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    width: 194px;
+    min-height: 0;
+    color: #000000;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 96px;
+    text-align: left;
+    text-transform: capitalize;
+    z-index: 10;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 10px;
+    position: relative;
+    width: 360px;
+    height: 100%;
+    z-index: 11;
+}
+
+.star {
+    aspect-ratio: 1/1;
+    height: 40%;
+    width: auto;
+}
+
+.starOn {
+    background: var(--images-starOn) no-repeat center;
+    background-size: cover;
+}
+
+.starOff {
+    background: var(--images-starOff) no-repeat center;
+    background-size: cover;
+}
+
+.date {
+    width: 100%;
+    padding-right: 2rem;
+    text-align: right;
+    font-size: 1.5em;
+    font-family: Kulim Park, var(--default-font-family);
+}
+
+.commentTextbox {
+    position: relative;
+    width: 1312px;
+    margin: 32px 0 0 0;
+    z-index: 5;
+    padding: 0.5rem;
+    background: rgba(18, 27, 58, 0.8);
+}
+
+.userComment {
+    padding: 0.5rem;
+    word-wrap: break-word;
+    text-indent: 2rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    margin: 0;
+    color: #ffffff;
+    border: dotted 2px rgba(255, 255, 255, 0.4);
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: left;
+    text-transform: capitalize;
+    z-index: 7;
+}

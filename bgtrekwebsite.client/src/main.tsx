@@ -11,6 +11,8 @@ import Footer from "./components/Footer/Footer.tsx";
 import Home from "./pages/Home/Home.tsx";
 import Blogs from "./pages/Blogs/Blogs.tsx";
 import Destinations from "./pages/Destinations/Destinations.tsx";
+import Location from "./pages/Location/Location.tsx";
+import Store from "./pages/Store/Store.tsx";
 
 import App from "./pages/App/App.tsx";
 
@@ -29,6 +31,8 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
             <Route path="/blogs" element={<Blogs />} />
             <Route path="/app" element={<App />} />
             <Route path="/destinations" element={<Destinations />} />
+            <Route path="/location" element={<Location />} />
+            <Route path="/store" element={<Store />} />
           </Routes>
           <Footer />
         </PageResize>

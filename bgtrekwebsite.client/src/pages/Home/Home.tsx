@@ -54,21 +54,27 @@ export default function Main() {
         <div className={styles.frame}>
           <div className={styles.varna}>
             <div className={styles.button}>
-              <button className={styles.varnaButton}>VARNA</button>
+              <a className={styles.varnaButton} href="/location">
+                VARNA
+              </a>
             </div>
             <div className={styles.rectangle5} />
           </div>
           <div className={styles.frame6}>
             <div className={styles.sofia}>
-              <button className={styles.button7}>
-                <span className={styles.sofiaButton}>SOFIA</span>
-              </button>
+              <div className={styles.button7}>
+                <a className={styles.sofiaButton} href="/location">
+                  SOFIA
+                </a>
+              </div>
               <div className={styles.rectangle9} />
             </div>
             <div className={styles.plovdiv}>
-              <button className={styles.buttonA}>
-                <span className={styles.plovdivButton}>PLOVDIV</span>
-              </button>
+              <div className={styles.buttonA}>
+                <a className={styles.plovdivButton} href="/location">
+                  PLOVDIV
+                </a>
+              </div>
               <div className={styles.rectangleC} />
             </div>
           </div>

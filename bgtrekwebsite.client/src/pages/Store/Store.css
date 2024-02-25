@@ -1,0 +1,2320 @@
+:root {
+    --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+        "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+        "Source Han Sans CN", sans-serif;
+}
+
+.main-container {
+    overflow: hidden;
+}
+
+.main-container,
+.main-container * {
+    box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button {
+    outline: 0;
+}
+
+.main-container {
+    position: relative;
+    width: 1440px;
+    height: 2562px;
+    margin: 0 auto;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.navbar-background {
+    position: relative;
+    width: 1440px;
+    height: 99px;
+    margin: 0 0 0 0;
+    background: #121b3a;
+    z-index: 93;
+    box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.6);
+}
+
+.home-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 10px;
+    position: absolute;
+    width: 240px;
+    height: 99px;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    background: linear-gradient(135deg, #035f55, #1b8d51);
+    border: 4px solid #ffffff;
+    z-index: 94;
+    overflow: hidden;
+    box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.5) inset;
+}
+
+.bg-trek {
+    flex-shrink: 0;
+    position: relative;
+    width: 144px;
+    font-family: Koulen, var(--default-font-family);
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 87px;
+    text-align: center;
+    text-overflow: initial;
+    white-space: nowrap;
+    z-index: 95;
+}
+
+.bg {
+    position: relative;
+    color: #f2f0ed;
+    font-family: Koulen, var(--default-font-family);
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 86.719px;
+    text-align: center;
+}
+
+.text-2 {
+    position: relative;
+    color: #d4d9e5;
+    font-family: Koulen, var(--default-font-family);
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 86.719px;
+    text-align: center;
+}
+
+.trek {
+    position: relative;
+    color: #f2f0ed;
+    font-family: Koulen, var(--default-font-family);
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 86.719px;
+    text-align: center;
+}
+
+.rectangle {
+    position: absolute;
+    width: 15.9%;
+    height: 100%;
+    top: 0;
+    left: 84.1%;
+    background: rgba(85, 53, 53, 0.6);
+    border-left: 4px solid #ffffff;
+    z-index: 106;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 20px;
+    position: absolute;
+    width: 229px;
+    height: 99px;
+    top: 0;
+    left: 0;
+    z-index: 107;
+}
+
+.login-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    position: relative;
+    width: 78px;
+    padding: 8px 16px 8px 16px;
+    cursor: pointer;
+    background: #278557;
+    border: 3px dashed #ffffff;
+    z-index: 108;
+    border-radius: 10px;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    width: 46px;
+    height: 23px;
+    color: #ffffff;
+    font-family: Kulim Park, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 109;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
+}
+
+.sign-up-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    position: relative;
+    width: 100px;
+    padding: 8px 16px 8px 16px;
+    background: #be3d3d;
+    border: 3px dashed #ffffff;
+    z-index: 110;
+    border-radius: 10px;
+}
+
+.sign-up {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    width: 68px;
+    height: 23px;
+    color: #ffffff;
+    font-family: Kulim Park, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 111;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
+}
+
+.faq-cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 12px;
+    position: absolute;
+    width: 127px;
+    height: 48px;
+    top: 25px;
+    left: 1051px;
+    z-index: 112;
+}
+
+.faq {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    width: 67px;
+    height: 39px;
+    color: #e7e7e7;
+    font-family: Kulim Park, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 39px;
+    text-align: center;
+    text-decoration: underline;
+    white-space: nowrap;
+    z-index: 113;
+}
+
+.shopping-cart {
+    flex-shrink: 0;
+    position: relative;
+    width: 48px;
+    height: 48px;
+    background: url(../assets/images/bd34c9b8-658a-4b95-9777-dfe35d75ee87.png) no-repeat center;
+    background-size: 100% 100%;
+    z-index: 114;
+}
+
+.navigation-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 37px;
+    position: absolute;
+    width: 468.92px;
+    height: 39px;
+    top: 30px;
+    left: 292px;
+    z-index: 96;
+}
+
+.blog-button {
+    flex-shrink: 0;
+    position: relative;
+    width: 49px;
+    height: 37px;
+    z-index: 97;
+}
+
+.blog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 49px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: #ffffff;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    text-transform: capitalize;
+    z-index: 98;
+}
+
+.destinations-button {
+    flex-shrink: 0;
+    position: relative;
+    width: 133px;
+    height: 37px;
+    z-index: 99;
+}
+
+.destinations {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 133px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: #e7e7e7;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    text-transform: capitalize;
+    z-index: 100;
+}
+
+.store-button {
+    flex-shrink: 0;
+    position: relative;
+    width: 62.921px;
+    height: 39px;
+    z-index: 101;
+}
+
+.store {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 62.921px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: #e7e7e7;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    z-index: 102;
+}
+
+.about-us-button {
+    flex-shrink: 0;
+    position: relative;
+    width: 112.999px;
+    height: 39px;
+    z-index: 103;
+}
+
+.about-us {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 112.999px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: #e7e7e7;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    z-index: 104;
+}
+
+.tourism-concept-traveler-background {
+    position: relative;
+    width: 1440px;
+    height: 734px;
+    margin: -2px 0 0 0;
+    background: url(../assets/images/37e861de-46fe-4e73-a61b-d87ffe451362.png) no-repeat center;
+    background-size: cover;
+    z-index: 1;
+}
+
+.souvenirs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 608px;
+    height: 249px;
+    top: 190px;
+    left: 417px;
+    color: #ffffff;
+    font-family: Koulen, var(--default-font-family);
+    font-size: 128px;
+    font-weight: 400;
+    line-height: 231.25px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 91;
+    text-shadow: 4px 4px 10px #000000;
+}
+
+.souvenirs-for-thrilled-travelleres {
+    position: relative;
+    width: 770px;
+    height: 84px;
+    margin: 86px 0 0 67px;
+    font-family: Kulim Park, var(--default-font-family);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 54.48px;
+    text-align: left;
+    z-index: 90;
+}
+
+.souvenirs-for-thrilled {
+    position: relative;
+    color: #000000;
+    font-family: Kulim Park, var(--default-font-family);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 54.48px;
+    text-align: left;
+}
+
+.travelleres {
+    position: relative;
+    color: #000000;
+    font-family: Kulim Park, var(--default-font-family);
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 54.48px;
+    text-align: left;
+}
+
+.get-yourself-some {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    width: 811px;
+    height: 130px;
+    margin: 0 0 0 67px;
+    color: #000000;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+    z-index: 89;
+}
+
+.store-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 32px;
+    position: absolute;
+    width: 1440px;
+    height: 798px;
+    top: 1131px;
+    left: 0;
+    z-index: 2;
+}
+
+.line {
+    flex-shrink: 0;
+    position: relative;
+    width: 960px;
+    height: 2px;
+    background: url(../assets/images/743b1647-0532-4f05-affe-366a01fff938.png) no-repeat center;
+    background-size: cover;
+    z-index: 3;
+}
+
+.frame {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-self: stretch;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    position: relative;
+    min-width: 0;
+    z-index: 4;
+}
+
+.frame-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    align-self: stretch;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    position: relative;
+    width: 400px;
+    padding: 16px 32px 16px 32px;
+    z-index: 5;
+    overflow: hidden;
+}
+
+.group {
+    flex-shrink: 0;
+    position: relative;
+    width: 336px;
+    height: 367px;
+    z-index: 6;
+}
+
+.sort {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    position: relative;
+    width: 336px;
+    margin: 0 0 0 0;
+    padding: 8px 8px 8px 8px;
+    background: linear-gradient(180deg, #fafafa, rgba(255, 255, 255, 0));
+    z-index: 7;
+    overflow: hidden;
+}
+
+.sort-2 {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 41px;
+    color: #2b2c56;
+    font-family: Kulim Park, var(--default-font-family);
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 41px;
+    text-align: left;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 8;
+}
+
+.list {
+    flex-shrink: 0;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    background: url(../assets/images/ddf1169c4d2fc2275884e4b5dd9256a9b0456be6.png) no-repeat center;
+    background-size: cover;
+    z-index: 9;
+}
+
+.filter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 8px;
+    position: relative;
+    width: 336px;
+    margin: 8px 0 0 0;
+    z-index: 10;
+}
+
+.filter-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-self: stretch;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    position: relative;
+    min-width: 0;
+    padding: 8px 8px 8px 8px;
+    background: linear-gradient(180deg, #fafafa, rgba(255, 255, 255, 0));
+    z-index: 11;
+    overflow: hidden;
+}
+
+.filter-3 {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 41px;
+    color: #2b2c56;
+    font-family: Kulim Park, var(--default-font-family);
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 41px;
+    text-align: left;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 12;
+}
+
+.filter-4 {
+    flex-shrink: 0;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    background: url(../assets/images/5fdb33c09cc6674db71e31ca60a6c3cbf8af8af5.png) no-repeat center;
+    background-size: cover;
+    z-index: 13;
+}
+
+.categories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 16px;
+    position: relative;
+    width: 336px;
+    margin: 8px 0 0 0;
+    z-index: 14;
+}
+
+.categories-5 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-self: stretch;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    position: relative;
+    min-width: 0;
+    height: 57px;
+    padding: 8px 8px 8px 8px;
+    background: linear-gradient(180deg, #fafafa, rgba(255, 255, 255, 0));
+    z-index: 15;
+    overflow: hidden;
+}
+
+.categories-6 {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 41px;
+    color: #2b2c56;
+    font-family: Kulim Park, var(--default-font-family);
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 41px;
+    text-align: left;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 16;
+}
+
+.category {
+    flex-shrink: 0;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    background: url(../assets/images/434beb0d1e76adf04a096728ec5c4d1085dd8d49.png) no-repeat center;
+    background-size: cover;
+    z-index: 17;
+}
+
+.all {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    position: relative;
+    width: 240px;
+    border-top: 1px solid #8da6ff;
+    z-index: 18;
+    overflow: hidden;
+}
+
+.all-7 {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 20px;
+    color: #000000;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 19;
+}
+
+.clothes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    position: relative;
+    width: 240px;
+    border-top: 1px solid #8da6ff;
+    z-index: 20;
+    overflow: hidden;
+}
+
+.clothes-8 {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 20px;
+    color: #000000;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 21;
+}
+
+.magnets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    position: relative;
+    width: 240px;
+    border-top: 1px solid #8da6ff;
+    z-index: 22;
+    overflow: hidden;
+}
+
+.magnets-9 {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 20px;
+    color: #000000;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 23;
+}
+
+.paintings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    position: relative;
+    width: 240px;
+    border-top: 1px solid #8da6ff;
+    z-index: 24;
+    overflow: hidden;
+}
+
+.paintings-a {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 20px;
+    color: #000000;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 25;
+}
+
+.pottery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    position: relative;
+    width: 240px;
+    border-top: 1px solid #8da6ff;
+    z-index: 26;
+    overflow: hidden;
+}
+
+.pottery-b {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 20px;
+    color: #000000;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 27;
+}
+
+.frame-c {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 32px;
+    position: relative;
+    width: 141px;
+    height: 96px;
+    z-index: 28;
+    overflow: hidden;
+}
+
+.arrow-left {
+    flex-shrink: 0;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    background: url(../assets/images/fb0dbd50-016f-4c6b-a5b8-e6c0ed36ef19.png) no-repeat center;
+    background-size: cover;
+    z-index: 29;
+}
+
+.text-17 {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 41px;
+    color: #ffffff;
+    font-family: Kulim Park, var(--default-font-family);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 41px;
+    text-align: left;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 30;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
+    -webkit-text-stroke: 1px #000000;
+}
+
+.arrow-right {
+    flex-shrink: 0;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    background: url(../assets/images/db35ea1c088eaf6e31562cba398044e564918ae8.png) no-repeat center;
+    background-size: cover;
+    z-index: 31;
+}
+
+.frame-d {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 0;
+    gap: 48px;
+    position: relative;
+    padding: 39px 35px 39px 35px;
+    background: #e8eff3;
+    z-index: 32;
+    overflow: hidden;
+}
+
+.frame-e {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 16px;
+    position: relative;
+    width: 192px;
+    height: 320px;
+    padding: 16px 16px 16px 16px;
+    background: linear-gradient(180deg, #ffffff, #ffffff);
+    z-index: 33;
+}
+
+.div-image {
+    flex-shrink: 0;
+    position: relative;
+    width: 160px;
+    height: 160px;
+    background: url(../assets/images/60301248dc431cf96825c0dbda37d13efea8745a.png) no-repeat center;
+    background-size: contain;
+    z-index: 34;
+}
+
+.frame-f {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    align-self: stretch;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 0;
+    position: relative;
+    min-height: 0;
+    z-index: 35;
+}
+
+.short-sleeved-tshirt {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    width: 160px;
+    height: 40px;
+    color: #000000;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+    text-transform: capitalize;
+    z-index: 36;
+}
+
+.price {
+    align-self: stretch;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 16px;
+    color: #7c86ab;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 37;
+}
+
+.frame-10 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    position: relative;
+    width: 160px;
+    height: 32px;
+    cursor: pointer;
+    background: #4bc675;
+    border: none;
+    z-index: 38;
+}
+
+.add-to-cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    width: 131px;
+    height: 24px;
+    color: #ffffff;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 39;
+}
+
+.frame-11 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 16px;
+    position: relative;
+    width: 192px;
+    height: 320px;
+    padding: 16px 16px 16px 16px;
+    background: linear-gradient(180deg, #ffffff, #ffffff);
+    z-index: 61;
+}
+
+.div-image-12 {
+    flex-shrink: 0;
+    position: relative;
+    width: 160px;
+    height: 160px;
+    background: url(../assets/images/60301248dc431cf96825c0dbda37d13efea8745a.png) no-repeat center;
+    background-size: contain;
+    z-index: 62;
+}
+
+.frame-13 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    align-self: stretch;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 0;
+    position: relative;
+    min-height: 0;
+    z-index: 63;
+}
+
+.short-sleeved-tshirt-14 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    width: 160px;
+    height: 40px;
+    color: #000000;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+    text-transform: capitalize;
+    z-index: 64;
+}
+
+.price-15 {
+    align-self: stretch;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 16px;
+    color: #7c86ab;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 65;
+}
+
+.frame-16 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    position: relative;
+    width: 160px;
+    height: 32px;
+    cursor: pointer;
+    background: #4bc675;
+    border: none;
+    z-index: 66;
+}
+
+.add-to-cart-17 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    width: 131px;
+    height: 24px;
+    color: #ffffff;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 67;
+}
+
+.frame-18 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 16px;
+    position: relative;
+    width: 192px;
+    height: 320px;
+    padding: 16px 16px 16px 16px;
+    background: linear-gradient(180deg, #ffffff, #ffffff);
+    z-index: 40;
+}
+
+.div-image-19 {
+    flex-shrink: 0;
+    position: relative;
+    width: 160px;
+    height: 160px;
+    background: url(../assets/images/60301248dc431cf96825c0dbda37d13efea8745a.png) no-repeat center;
+    background-size: contain;
+    z-index: 41;
+}
+
+.frame-1a {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    align-self: stretch;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 0;
+    position: relative;
+    min-height: 0;
+    z-index: 42;
+}
+
+.short-sleeved-tshirt-1b {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    width: 160px;
+    height: 40px;
+    color: #000000;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+    text-transform: capitalize;
+    z-index: 43;
+}
+
+.price-1c {
+    align-self: stretch;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 16px;
+    color: #7c86ab;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 44;
+}
+
+.frame-1d {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    position: relative;
+    width: 160px;
+    height: 32px;
+    cursor: pointer;
+    background: #4bc675;
+    border: none;
+    z-index: 45;
+}
+
+.add-to-cart-1e {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    width: 131px;
+    height: 24px;
+    color: #ffffff;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 46;
+}
+
+.frame-1f {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 16px;
+    position: relative;
+    width: 192px;
+    height: 320px;
+    padding: 16px 16px 16px 16px;
+    background: linear-gradient(180deg, #ffffff, #ffffff);
+    z-index: 68;
+}
+
+.div-image-20 {
+    flex-shrink: 0;
+    position: relative;
+    width: 160px;
+    height: 160px;
+    background: url(../assets/images/60301248dc431cf96825c0dbda37d13efea8745a.png) no-repeat center;
+    background-size: contain;
+    z-index: 69;
+}
+
+.frame-21 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    align-self: stretch;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 0;
+    position: relative;
+    min-height: 0;
+    z-index: 70;
+}
+
+.short-sleeved-tshirt-22 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    width: 160px;
+    height: 40px;
+    color: #000000;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+    text-transform: capitalize;
+    z-index: 71;
+}
+
+.price-23 {
+    align-self: stretch;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 16px;
+    color: #7c86ab;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 72;
+}
+
+.frame-24 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    position: relative;
+    width: 160px;
+    height: 32px;
+    cursor: pointer;
+    background: #4bc675;
+    border: none;
+    z-index: 73;
+}
+
+.add-to-cart-25 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    width: 131px;
+    height: 24px;
+    color: #ffffff;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 74;
+}
+
+.frame-26 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 16px;
+    position: relative;
+    width: 192px;
+    height: 320px;
+    padding: 16px 16px 16px 16px;
+    background: linear-gradient(180deg, #ffffff, #ffffff);
+    z-index: 47;
+}
+
+.div-image-27 {
+    flex-shrink: 0;
+    position: relative;
+    width: 160px;
+    height: 160px;
+    background: url(../assets/images/60301248dc431cf96825c0dbda37d13efea8745a.png) no-repeat center;
+    background-size: contain;
+    z-index: 48;
+}
+
+.frame-28 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    align-self: stretch;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 0;
+    position: relative;
+    min-height: 0;
+    z-index: 49;
+}
+
+.short-sleeved-tshirt-29 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    width: 160px;
+    height: 40px;
+    color: #000000;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+    text-transform: capitalize;
+    z-index: 50;
+}
+
+.bgn {
+    align-self: stretch;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 16px;
+    color: #7c86ab;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 51;
+}
+
+.frame-2a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    position: relative;
+    width: 160px;
+    height: 32px;
+    cursor: pointer;
+    background: #4bc675;
+    border: none;
+    z-index: 52;
+}
+
+.add-to-cart-2b {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    width: 131px;
+    height: 24px;
+    color: #ffffff;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 53;
+}
+
+.frame-2c {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 16px;
+    position: relative;
+    width: 192px;
+    height: 320px;
+    padding: 16px 16px 16px 16px;
+    background: linear-gradient(180deg, #ffffff, #ffffff);
+    z-index: 75;
+}
+
+.br-rk-bt-ts-cla-mgyqevdl-png-ac-sx {
+    flex-shrink: 0;
+    position: relative;
+    width: 160px;
+    height: 160px;
+    background: url(../assets/images/60301248dc431cf96825c0dbda37d13efea8745a.png) no-repeat center;
+    background-size: contain;
+    z-index: 76;
+}
+
+.frame-2d {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    align-self: stretch;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 0;
+    position: relative;
+    min-height: 0;
+    z-index: 77;
+}
+
+.short-sleeved-tshirt-2e {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    width: 160px;
+    height: 40px;
+    color: #000000;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+    text-transform: capitalize;
+    z-index: 78;
+}
+
+.bgn-2f {
+    align-self: stretch;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 16px;
+    color: #7c86ab;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 79;
+}
+
+.frame-30 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    position: relative;
+    width: 160px;
+    height: 32px;
+    cursor: pointer;
+    background: #4bc675;
+    border: none;
+    z-index: 80;
+}
+
+.add-to-cart-31 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    width: 131px;
+    height: 24px;
+    color: #ffffff;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 81;
+}
+
+.frame-32 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 16px;
+    position: relative;
+    width: 192px;
+    height: 320px;
+    padding: 16px 16px 16px 16px;
+    background: linear-gradient(180deg, #ffffff, #ffffff);
+    z-index: 54;
+}
+
+.br-rk-bt-ts-cla-mgyqevdl-png-ac-sx-33 {
+    flex-shrink: 0;
+    position: relative;
+    width: 160px;
+    height: 160px;
+    background: url(../assets/images/60301248dc431cf96825c0dbda37d13efea8745a.png) no-repeat center;
+    background-size: contain;
+    z-index: 55;
+}
+
+.frame-34 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    align-self: stretch;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 0;
+    position: relative;
+    min-height: 0;
+    z-index: 56;
+}
+
+.short-sleeved-tshirt-35 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    width: 160px;
+    height: 40px;
+    color: #000000;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+    text-transform: capitalize;
+    z-index: 57;
+}
+
+.bgn-36 {
+    align-self: stretch;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 16px;
+    color: #7c86ab;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 58;
+}
+
+.frame-37 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    position: relative;
+    width: 160px;
+    height: 32px;
+    cursor: pointer;
+    background: #4bc675;
+    border: none;
+    z-index: 59;
+}
+
+.add-to-cart-38 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    width: 131px;
+    height: 24px;
+    color: #ffffff;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 60;
+}
+
+.frame-39 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 16px;
+    position: relative;
+    width: 192px;
+    height: 320px;
+    padding: 16px 16px 16px 16px;
+    background: linear-gradient(180deg, #ffffff, #ffffff);
+    z-index: 82;
+}
+
+.br-rk-bt-ts-cla-mgyqevdl-png-ac-sx-3a {
+    flex-shrink: 0;
+    position: relative;
+    width: 160px;
+    height: 160px;
+    background: url(../assets/images/60301248dc431cf96825c0dbda37d13efea8745a.png) no-repeat center;
+    background-size: contain;
+    z-index: 83;
+}
+
+.frame-3b {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    align-self: stretch;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 0;
+    position: relative;
+    min-height: 0;
+    z-index: 84;
+}
+
+.short-sleeved-tshirt-3c {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    width: 160px;
+    height: 40px;
+    color: #000000;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+    text-transform: capitalize;
+    z-index: 85;
+}
+
+.bgn-3d {
+    align-self: stretch;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 16px;
+    color: #7c86ab;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 86;
+}
+
+.frame-3e {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    position: relative;
+    width: 160px;
+    height: 32px;
+    cursor: pointer;
+    background: #4bc675;
+    border: none;
+    z-index: 87;
+}
+
+.add-to-cart-3f {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    width: 131px;
+    height: 24px;
+    color: #ffffff;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 88;
+}
+
+.header-background {
+    position: absolute;
+    width: 100%;
+    height: 25.33%;
+    top: 74.67%;
+    left: 0;
+    background: #121b3a;
+    z-index: 116;
+}
+
+.rectangle-40 {
+    position: absolute;
+    width: 44.2%;
+    height: 100%;
+    top: 0;
+    left: 55.8%;
+    background: #ffffff;
+    z-index: 117;
+}
+
+.contact-us-background-art {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url(../assets/images/80ef7d18-6171-4322-831e-457d6ef6518e.png) no-repeat center;
+    background-size: 100% 100%;
+    z-index: 118;
+}
+
+.rectangle-41 {
+    position: absolute;
+    width: 51.42%;
+    height: 19.72%;
+    top: 7.09%;
+    left: 23.42%;
+    background: #33a86b;
+    border: 4px solid #132a13;
+    z-index: 151;
+    border-radius: 30px;
+    box-shadow: 6px 6px 10px 0 #000000;
+}
+
+.contact-us {
+    position: absolute;
+    width: 60.41%;
+    height: 67.97%;
+    top: 12.5%;
+    left: 0.54%;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Koulen, var(--default-font-family);
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 86.719px;
+    white-space: nowrap;
+    background: transparent;
+    border: none;
+    z-index: 152;
+}
+
+.rectangle-42 {
+    position: absolute;
+    width: 10.81%;
+    height: 62.5%;
+    top: 15.63%;
+    left: 73.78%;
+    background: #366388;
+    border: 4px dashed #ffffff;
+    z-index: 153;
+    border-radius: 20px;
+    box-sizing: content-box;
+}
+
+.contact {
+    position: relative;
+    width: 64.044px;
+    height: 64px;
+    margin: 8px 0 0 8.006px;
+    background: url(../assets/images/a6fc2876985adc41a39ab255b2f3d550f51b47eb.png) no-repeat center;
+    background-size: cover;
+    z-index: 154;
+}
+
+.pages-headers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    position: absolute;
+    width: 768px;
+    height: 47px;
+    top: 201px;
+    left: 24px;
+    z-index: 120;
+}
+
+.destinations-43 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    width: 192px;
+    height: 46.834px;
+    color: #ffffff;
+    font-family: Kulim Park, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 46.834px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 121;
+}
+
+.routes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    width: 192px;
+    height: 47px;
+    color: #ffffff;
+    font-family: Kulim Park, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 47px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 122;
+}
+
+.blog-44 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    width: 192px;
+    height: 47px;
+    color: #ffffff;
+    font-family: Kulim Park, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 47px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 123;
+}
+
+.store-45 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    width: 192px;
+    height: 47px;
+    color: #ffffff;
+    font-family: Kulim Park, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 47px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 124;
+}
+
+.vertical-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    position: absolute;
+    width: 153px;
+    height: 172px;
+    top: 279px;
+    left: 43px;
+    z-index: 136;
+}
+
+.villages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    width: 154px;
+    height: 47px;
+    color: #c3d2e9;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    text-decoration: underline;
+    z-index: 137;
+}
+
+.cities {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    width: 154px;
+    height: 47px;
+    color: #c3d2e9;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    text-decoration: underline;
+    z-index: 138;
+}
+
+.landmarks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    width: 154px;
+    height: 47px;
+    color: #c3d2e9;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    text-decoration: underline;
+    z-index: 139;
+}
+
+.resorts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    width: 154px;
+    height: 47px;
+    color: #c3d2e9;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    text-decoration: underline;
+    z-index: 140;
+}
+
+.vertical-container-46 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    position: absolute;
+    width: 154px;
+    height: 141px;
+    top: 279px;
+    left: 235px;
+    z-index: 132;
+}
+
+.shared-routes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    width: 154px;
+    height: 47px;
+    color: #c4d3ea;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    text-decoration: underline;
+    z-index: 133;
+}
+
+.make-a-route {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    width: 154px;
+    height: 47px;
+    color: #c4d3ea;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    text-decoration: underline;
+    z-index: 134;
+}
+
+.my-routes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    width: 154px;
+    height: 47px;
+    color: #c4d3ea;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    text-decoration: underline;
+    z-index: 135;
+}
+
+.our-blog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 106.074px;
+    height: 7.24%;
+    top: 42.99%;
+    left: 31.34%;
+    color: #c4d3ea;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    text-decoration: underline;
+    z-index: 128;
+}
+
+.our-store {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 106.074px;
+    height: 7.24%;
+    top: 44.22%;
+    left: 44.68%;
+    color: #c4d3ea;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    text-decoration: underline;
+    z-index: 127;
+}
+
+.about-us-47 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 151.105px;
+    height: 9.86%;
+    top: 56.24%;
+    left: 43.09%;
+    color: #ffffff;
+    font-family: Kulim Park, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 36.32px;
+    text-align: center;
+    z-index: 141;
+}
+
+.faq-48 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 80.056px;
+    height: 9.86%;
+    top: 56.24%;
+    left: 32.24%;
+    color: #ffffff;
+    font-family: Kulim Park, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 36.32px;
+    text-align: center;
+    z-index: 142;
+}
+
+.our-faq {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 106.074px;
+    height: 7.24%;
+    top: 63.48%;
+    left: 31.34%;
+    color: #c4d3ea;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    text-decoration: underline;
+    z-index: 126;
+}
+
+.vertical-container-49 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    position: absolute;
+    width: 164px;
+    height: 94px;
+    top: 416px;
+    left: 614px;
+    z-index: 129;
+}
+
+.our-company {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    width: 164px;
+    height: 47px;
+    color: #c4d3ea;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    text-decoration: underline;
+    z-index: 130;
+}
+
+.contact-us-4a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    width: 164px;
+    height: 47px;
+    color: #c4d3ea;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    text-decoration: underline;
+    z-index: 131;
+}
+
+.horizontal-line {
+    position: absolute;
+    width: 51.22%;
+    height: 0.62%;
+    top: 83.67%;
+    left: 1.67%;
+    background: url(../assets/images/33c3d144-e3a3-4cdf-a118-3516b4f0d1e2.png) no-repeat center;
+    background-size: 100% 100%;
+    z-index: 144;
+}
+
+.icon-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 30px;
+    position: absolute;
+    width: 234px;
+    height: 36px;
+    top: 570px;
+    left: 24px;
+    z-index: 145;
+}
+
+.twitter {
+    flex-shrink: 0;
+    position: relative;
+    width: 36px;
+    height: 36px;
+    background: url(../assets/images/523d1ae92d0e487365ffcbb21a6cff117164b350.png) no-repeat center;
+    background-size: cover;
+    z-index: 146;
+}
+
+.instagram {
+    flex-shrink: 0;
+    position: relative;
+    width: 36px;
+    height: 36px;
+    background: url(../assets/images/6149c9f42ff6c577eef6a6f7f8645eae9f50ffc7.png) no-repeat center;
+    background-size: cover;
+    z-index: 147;
+}
+
+.facebook {
+    flex-shrink: 0;
+    position: relative;
+    width: 36px;
+    height: 36px;
+    background: url(../assets/images/d408541888ea5d25ee8cb6b3f1c81675798cc87d.png) no-repeat center;
+    background-size: cover;
+    z-index: 148;
+}
+
+.linkedin-logo {
+    flex-shrink: 0;
+    position: relative;
+    width: 36px;
+    height: 36px;
+    background: url(../assets/images/e8c4068fae16391b1770a7d299caef700942a699.png) no-repeat center;
+    background-size: cover;
+    z-index: 149;
+}
+
+.bg-trek-4b {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 12.3%;
+    height: 4.47%;
+    top: 88.29%;
+    left: 40.65%;
+    color: #ffffff;
+    font-family: Kulim Park, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 27.24px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 143;
+}

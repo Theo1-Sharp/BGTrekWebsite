@@ -8,13 +8,14 @@ export default function PageResize({
 }) {
   const scaleRef = useRef<HTMLDivElement | null>(null);
   const contentRef = useRef<HTMLDivElement | null>(null);
+
   const [scaleValue, setScaleValue] = useState<number>(1);
   const [scrollDist, setScrollDist] = useState<number>(0);
-
   const [scaleContainerWidth, setScaleContainerWidth] = useState<number>(
     Number(scaleRef.current?.offsetWidth)
   );
 
+  //Scale page so that it is always visible no matter browser size
   const scalePage = () => {
     const contentElement = contentRef.current;
     const scaleElement = scaleRef.current;
@@ -22,27 +23,30 @@ export default function PageResize({
     if (contentElement) {
       const contentWidth: number = Number(contentElement?.offsetWidth);
       const contentHeight: number = Number(contentElement?.offsetHeight);
-      const scaleFactor = Number(scaleContainerWidth) / contentWidth;
-      setScaleValue(scaleFactor);
-      contentElement.style.transform = `scale(${scaleFactor}) `;
+      const tempScaleValue = Number(scaleContainerWidth) / contentWidth;
+      setScaleValue(tempScaleValue);
+      contentElement.style.transform = `scale(${tempScaleValue}) `;
 
       if (scaleElement) {
-        scaleElement.style.height = `${contentHeight * scaleFactor}px`;
+        scaleElement.style.height = `${contentHeight * tempScaleValue}px`;
       }
     }
   };
 
   //Fix navbar not sticking to top properly due to scale
-  useEffect(() => {
+  const moveNavbar = () => {
     document
       .getElementsByTagName("nav")[0]
       .style.setProperty(
         "top",
         (scrollDist / scaleValue - scrollDist).toString() + "px"
       );
-  }, [scrollDist, scaleContainerWidth]);
+  };
 
-  //Scale page so that it is always visible no matter browser size
+  useEffect(() => {
+    moveNavbar();
+  }, [scrollDist, scaleContainerWidth, scaleValue]);
+
   useEffect(() => {
     scalePage();
   }, [scaleContainerWidth]);
@@ -54,7 +58,7 @@ export default function PageResize({
     };
 
     const handleScroll = () => {
-      setScrollDist(window.scrollY);
+      setScrollDist(Number(window.scrollY));
     };
 
     window.addEventListener("resize", handleResize);
@@ -71,7 +75,7 @@ export default function PageResize({
     setScaleContainerWidth(Number(scaleRef.current?.offsetWidth));
   }, []);
 
-  //Wrapping containers
+  //Wrapping website in divs for scaling
   return (
     <div className={styles.scaleContainer} ref={scaleRef}>
       <div className={styles.contentPage} ref={contentRef}>

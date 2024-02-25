@@ -236,8 +236,6 @@ button {
     height: 1371px;
     top: 0;
     left: 0;
-    background: url(../assets/images/3a688d25-7746-4343-b0cb-ba964a38c9be.png) no-repeat center;
-    background-size: cover;
     z-index: 1;
     background: linear-gradient(135deg, rgba(42, 74, 124, 1) 0%, rgba(116, 58, 117, 1) 100%);
 }
