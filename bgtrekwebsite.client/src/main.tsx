@@ -13,6 +13,7 @@ import Blogs from "./pages/Blogs/Blogs.tsx";
 import Destinations from "./pages/Destinations/Destinations.tsx";
 import Location from "./pages/Location/Location.tsx";
 import Store from "./pages/Store/Store.tsx";
+import Company from "./pages/Company/Company.tsx";
 
 import App from "./pages/App/App.tsx";
 
@@ -33,6 +34,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
             <Route path="/destinations" element={<Destinations />} />
             <Route path="/location" element={<Location />} />
             <Route path="/store" element={<Store />} />
+            <Route path="/company" element={<Company />} />
           </Routes>
           <Footer />
         </PageResize>

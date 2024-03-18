@@ -1,0 +1,1216 @@
+.mainContainer {
+    overflow: hidden;
+}
+
+.mainContainer,
+.mainContainer * {
+    box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button {
+    outline: 0;
+}
+
+.mainContainer {
+    position: relative;
+    width: 1440px;
+    height: 4676px;
+    margin: 0 auto;
+    background: #f2f0ed;
+}
+
+.navbarBackground {
+    position: relative;
+    width: 1440px;
+    height: 99px;
+    margin: 0 0 0 0;
+    background: #121b3a;
+    z-index: 56;
+    box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.6);
+}
+
+.homeButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 10px;
+    position: absolute;
+    width: 240px;
+    height: 99px;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    background: linear-gradient(135deg, #035f55, #1b8d51);
+    border: 4px solid #ffffff;
+    z-index: 57;
+    overflow: hidden;
+    box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.5) inset;
+}
+
+.bgTrek {
+    flex-shrink: 0;
+    position: relative;
+    width: 144px;
+    font-family: Koulen, var(--default-font-family);
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 87px;
+    text-align: center;
+    text-overflow: initial;
+    white-space: nowrap;
+    z-index: 58;
+}
+
+.bg {
+    position: relative;
+    color: #f2f0ed;
+    font-family: Koulen, var(--default-font-family);
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 86.719px;
+    text-align: center;
+}
+
+.text2 {
+    position: relative;
+    color: #d4d9e5;
+    font-family: Koulen, var(--default-font-family);
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 86.719px;
+    text-align: center;
+}
+
+.trek {
+    position: relative;
+    color: #f2f0ed;
+    font-family: Koulen, var(--default-font-family);
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 86.719px;
+    text-align: center;
+}
+
+.rectangle {
+    position: absolute;
+    width: 15.9%;
+    height: 100%;
+    top: 0;
+    left: 84.1%;
+    background: rgba(85, 53, 53, 0.6);
+    border-left: 4px solid #ffffff;
+    z-index: 69;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 20px;
+    position: absolute;
+    width: 229px;
+    height: 99px;
+    top: 0;
+    left: 0;
+    z-index: 70;
+}
+
+.loginButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    position: relative;
+    width: 78px;
+    padding: 8px 16px 8px 16px;
+    cursor: pointer;
+    background: #278557;
+    border: 3px dashed #ffffff;
+    z-index: 71;
+    border-radius: 10px;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    width: 46px;
+    height: 23px;
+    color: #ffffff;
+    font-family: Kulim Park, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 72;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
+}
+
+.signUpButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    position: relative;
+    width: 100px;
+    padding: 8px 16px 8px 16px;
+    cursor: pointer;
+    background: #be3d3d;
+    border: 3px dashed #ffffff;
+    z-index: 73;
+    border-radius: 10px;
+}
+
+.signUp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    width: 68px;
+    height: 23px;
+    color: #ffffff;
+    font-family: Kulim Park, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 74;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
+}
+
+.faqCart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 12px;
+    position: absolute;
+    width: 127px;
+    height: 48px;
+    top: 25px;
+    left: 1051px;
+    z-index: 75;
+}
+
+.faq {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    width: 67px;
+    height: 39px;
+    color: #e7e7e7;
+    font-family: Kulim Park, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 39px;
+    text-align: center;
+    text-decoration: underline;
+    white-space: nowrap;
+    z-index: 76;
+}
+
+.shoppingCart {
+    flex-shrink: 0;
+    position: relative;
+    width: 48px;
+    height: 48px;
+    background: url(../assets/images/ca816559-759c-41af-8194-767eb0803e5d.png) no-repeat center;
+    background-size: 100% 100%;
+    z-index: 77;
+}
+
+.navigationButtons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 37px;
+    position: absolute;
+    width: 468.92px;
+    height: 39px;
+    top: 30px;
+    left: 292px;
+    z-index: 59;
+}
+
+.blogButton {
+    flex-shrink: 0;
+    position: relative;
+    width: 49px;
+    height: 37px;
+    z-index: 60;
+}
+
+.blog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 49px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: #ffffff;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    text-transform: capitalize;
+    z-index: 61;
+}
+
+.destinationsButton {
+    flex-shrink: 0;
+    position: relative;
+    width: 133px;
+    height: 37px;
+    z-index: 62;
+}
+
+.destinations {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 133px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: #e7e7e7;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    text-transform: capitalize;
+    z-index: 63;
+}
+
+.storeButton {
+    flex-shrink: 0;
+    position: relative;
+    width: 62.921px;
+    height: 39px;
+    z-index: 64;
+}
+
+.store {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 62.921px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: #e7e7e7;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    z-index: 65;
+}
+
+.aboutUsButton {
+    flex-shrink: 0;
+    position: relative;
+    width: 112.999px;
+    height: 39px;
+    z-index: 66;
+}
+
+.aboutUs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 112.999px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: #e7e7e7;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    z-index: 67;
+}
+
+.slogan {
+    position: relative;
+    width: 1440px;
+    height: 887px;
+    margin: -1px 0 0 0;
+    z-index: 44;
+    overflow: hidden;
+}
+
+.blueRectangle {
+    position: absolute;
+    width: 1482.065px;
+    height: 1418.645px;
+    top: -1110px;
+    left: -106px;
+    background: url(../assets/images/3b6cc0cb-b84d-4a47-8aa8-82228a9eabcf.png) no-repeat center;
+    background-size: cover;
+    z-index: 49;
+}
+
+.redRectangle {
+    position: absolute;
+    width: 1482.065px;
+    height: 1418.645px;
+    top: -765px;
+    left: -740px;
+    background: url(../assets/images/afe82aad-9f50-4c8e-b880-5ecb0f065f6a.png) no-repeat center;
+    background-size: cover;
+    z-index: 48;
+}
+
+.hdWallpaperMountains {
+    position: absolute;
+    width: 1538px;
+    height: 1154px;
+    top: -164px;
+    left: -50px;
+    background: url(../assets/images/ecb2cc1144c7a94993c115b8eb79629b89b4000a.png) no-repeat center;
+    background-size: cover;
+    opacity: 0.7;
+    filter: blur(15px);
+    z-index: 47;
+}
+
+.rectangle1 {
+    position: absolute;
+    width: 1440px;
+    height: 887px;
+    top: 0;
+    left: 0;
+    background: #f2f0ed;
+    z-index: 45;
+}
+
+.rectangle2 {
+    position: absolute;
+    width: 1440px;
+    height: 887px;
+    top: 0;
+    left: 0;
+    background: #f2f0ed;
+    z-index: 46;
+}
+
+.redRectangle3 {
+    position: absolute;
+    width: 1482.065px;
+    height: 1418.645px;
+    top: 248px;
+    left: 854px;
+    background: url(../assets/images/81540203-eccb-4066-9dcd-fbd72ebffc09.png) no-repeat center;
+    background-size: cover;
+    z-index: 51;
+}
+
+.slogan4 {
+    position: absolute;
+    width: 891px;
+    height: 227px;
+    top: 330px;
+    left: 273px;
+    z-index: 52;
+    border-radius: 40px;
+}
+
+.travelToBulgaria {
+    position: relative;
+    width: 778.918px;
+    height: 193.722px;
+    margin: 17px 0 0 57.541px;
+    cursor: pointer;
+    font-family: Koulen, var(--default-font-family);
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 86.719px;
+    background: transparent;
+    border: none;
+    z-index: 54;
+}
+
+.travel {
+    position: relative;
+    color: #ffffff;
+    font-family: Kulim Park, var(--default-font-family);
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 86.719px;
+    text-align: center;
+    text-shadow: rgb(0, 0, 0) 2px 0px 0px, rgb(0, 0, 0) 1.75517px 0.958851px 0px, rgb(0, 0, 0) 1.0806px 1.68294px 0px, rgb(0, 0, 0) 0.141474px 1.99499px 0px, rgb(0, 0, 0) -0.832294px 1.81859px 0px, rgb(0, 0, 0) -1.60229px 1.19694px 0px, rgb(0, 0, 0) -1.97999px 0.28224px 0px, rgb(0, 0, 0) -1.87291px -0.701566px 0px, rgb(0, 0, 0) -1.30729px -1.51361px 0px, rgb(0, 0, 0) -0.421592px -1.95506px 0px, rgb(0, 0, 0) 0.567324px -1.91785px 0px, rgb(0, 0, 0) 1.41734px -1.41108px 0px, rgb(0, 0, 0) 1.92034px -0.558831px 0px,
+        4px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+.bulgaria {
+    position: relative;
+    color: #ffffff;
+    font-family: Koulen, var(--default-font-family);
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 86.719px;
+    text-align: center;
+    text-shadow: rgb(0, 0, 0) 2px 0px 0px, rgb(0, 0, 0) 1.75517px 0.958851px 0px, rgb(0, 0, 0) 1.0806px 1.68294px 0px, rgb(0, 0, 0) 0.141474px 1.99499px 0px, rgb(0, 0, 0) -0.832294px 1.81859px 0px, rgb(0, 0, 0) -1.60229px 1.19694px 0px, rgb(0, 0, 0) -1.97999px 0.28224px 0px, rgb(0, 0, 0) -1.87291px -0.701566px 0px, rgb(0, 0, 0) -1.30729px -1.51361px 0px, rgb(0, 0, 0) -0.421592px -1.95506px 0px, rgb(0, 0, 0) 0.567324px -1.91785px 0px, rgb(0, 0, 0) 1.41734px -1.41108px 0px, rgb(0, 0, 0) 1.92034px -0.558831px 0px,
+        4px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+.travel5 {
+    position: relative;
+    color: #ffffff;
+    font-family: Kulim Park, var(--default-font-family);
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 86.719px;
+    text-align: center;
+    text-shadow: rgb(0, 0, 0) 2px 0px 0px, rgb(0, 0, 0) 1.75517px 0.958851px 0px, rgb(0, 0, 0) 1.0806px 1.68294px 0px, rgb(0, 0, 0) 0.141474px 1.99499px 0px, rgb(0, 0, 0) -0.832294px 1.81859px 0px, rgb(0, 0, 0) -1.60229px 1.19694px 0px, rgb(0, 0, 0) -1.97999px 0.28224px 0px, rgb(0, 0, 0) -1.87291px -0.701566px 0px, rgb(0, 0, 0) -1.30729px -1.51361px 0px, rgb(0, 0, 0) -0.421592px -1.95506px 0px, rgb(0, 0, 0) 0.567324px -1.91785px 0px, rgb(0, 0, 0) 1.41734px -1.41108px 0px, rgb(0, 0, 0) 1.92034px -0.558831px 0px,
+        4px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+.bulgaria6 {
+    position: relative;
+    color: #ffffff;
+    font-family: Koulen, var(--default-font-family);
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 86.719px;
+    text-align: center;
+    text-shadow: rgb(0, 0, 0) 2px 0px 0px, rgb(0, 0, 0) 1.75517px 0.958851px 0px, rgb(0, 0, 0) 1.0806px 1.68294px 0px, rgb(0, 0, 0) 0.141474px 1.99499px 0px, rgb(0, 0, 0) -0.832294px 1.81859px 0px, rgb(0, 0, 0) -1.60229px 1.19694px 0px, rgb(0, 0, 0) -1.97999px 0.28224px 0px, rgb(0, 0, 0) -1.87291px -0.701566px 0px, rgb(0, 0, 0) -1.30729px -1.51361px 0px, rgb(0, 0, 0) -0.421592px -1.95506px 0px, rgb(0, 0, 0) 0.567324px -1.91785px 0px, rgb(0, 0, 0) 1.41734px -1.41108px 0px, rgb(0, 0, 0) 1.92034px -0.558831px 0px,
+        4px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+.travel7 {
+    position: relative;
+    color: #ffffff;
+    font-family: Kulim Park, var(--default-font-family);
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 86.719px;
+    text-align: center;
+    text-shadow: rgb(0, 0, 0) 2px 0px 0px, rgb(0, 0, 0) 1.75517px 0.958851px 0px, rgb(0, 0, 0) 1.0806px 1.68294px 0px, rgb(0, 0, 0) 0.141474px 1.99499px 0px, rgb(0, 0, 0) -0.832294px 1.81859px 0px, rgb(0, 0, 0) -1.60229px 1.19694px 0px, rgb(0, 0, 0) -1.97999px 0.28224px 0px, rgb(0, 0, 0) -1.87291px -0.701566px 0px, rgb(0, 0, 0) -1.30729px -1.51361px 0px, rgb(0, 0, 0) -0.421592px -1.95506px 0px, rgb(0, 0, 0) 0.567324px -1.91785px 0px, rgb(0, 0, 0) 1.41734px -1.41108px 0px, rgb(0, 0, 0) 1.92034px -0.558831px 0px,
+        4px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+.bulgaria8 {
+    position: relative;
+    color: #ffffff;
+    font-family: Koulen, var(--default-font-family);
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 86.719px;
+    text-align: center;
+    text-shadow: rgb(0, 0, 0) 2px 0px 0px, rgb(0, 0, 0) 1.75517px 0.958851px 0px, rgb(0, 0, 0) 1.0806px 1.68294px 0px, rgb(0, 0, 0) 0.141474px 1.99499px 0px, rgb(0, 0, 0) -0.832294px 1.81859px 0px, rgb(0, 0, 0) -1.60229px 1.19694px 0px, rgb(0, 0, 0) -1.97999px 0.28224px 0px, rgb(0, 0, 0) -1.87291px -0.701566px 0px, rgb(0, 0, 0) -1.30729px -1.51361px 0px, rgb(0, 0, 0) -0.421592px -1.95506px 0px, rgb(0, 0, 0) 0.567324px -1.91785px 0px, rgb(0, 0, 0) 1.41734px -1.41108px 0px, rgb(0, 0, 0) 1.92034px -0.558831px 0px,
+        4px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+.travel9 {
+    position: relative;
+    color: #ffffff;
+    font-family: Kulim Park, var(--default-font-family);
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 86.719px;
+    text-align: center;
+    text-shadow: rgb(0, 0, 0) 2px 0px 0px, rgb(0, 0, 0) 1.75517px 0.958851px 0px, rgb(0, 0, 0) 1.0806px 1.68294px 0px, rgb(0, 0, 0) 0.141474px 1.99499px 0px, rgb(0, 0, 0) -0.832294px 1.81859px 0px, rgb(0, 0, 0) -1.60229px 1.19694px 0px, rgb(0, 0, 0) -1.97999px 0.28224px 0px, rgb(0, 0, 0) -1.87291px -0.701566px 0px, rgb(0, 0, 0) -1.30729px -1.51361px 0px, rgb(0, 0, 0) -0.421592px -1.95506px 0px, rgb(0, 0, 0) 0.567324px -1.91785px 0px, rgb(0, 0, 0) 1.41734px -1.41108px 0px, rgb(0, 0, 0) 1.92034px -0.558831px 0px,
+        4px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+.weWillShowYouHow {
+    position: relative;
+    color: #ffffff;
+    font-family: Kulim Park, var(--default-font-family);
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 86.719px;
+    text-align: center;
+    text-shadow: rgb(0, 0, 0) 2px 0px 0px, rgb(0, 0, 0) 1.75517px 0.958851px 0px, rgb(0, 0, 0) 1.0806px 1.68294px 0px, rgb(0, 0, 0) 0.141474px 1.99499px 0px, rgb(0, 0, 0) -0.832294px 1.81859px 0px, rgb(0, 0, 0) -1.60229px 1.19694px 0px, rgb(0, 0, 0) -1.97999px 0.28224px 0px, rgb(0, 0, 0) -1.87291px -0.701566px 0px, rgb(0, 0, 0) -1.30729px -1.51361px 0px, rgb(0, 0, 0) -0.421592px -1.95506px 0px, rgb(0, 0, 0) 0.567324px -1.91785px 0px, rgb(0, 0, 0) 1.41734px -1.41108px 0px, rgb(0, 0, 0) 1.92034px -0.558831px 0px,
+        4px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+.rectangleA {
+    position: absolute;
+    width: 891px;
+    height: 227px;
+    top: 0;
+    left: 0;
+    background: #ff4e4e;
+    border: 6px solid #284134;
+    z-index: 53;
+    border-radius: 40px;
+    box-shadow: 10px 10px 0 0 rgba(0, 0, 0, 0.7);
+}
+
+.blueRectangleB {
+    position: absolute;
+    width: 569.272px;
+    height: 520.821px;
+    top: 695px;
+    left: 579px;
+    background: url(../assets/images/342ffcbd-e097-48cb-8d33-87c0efedc28e.png) no-repeat center;
+    background-size: cover;
+    z-index: 50;
+}
+
+.rectangleC {
+    position: relative;
+    width: 1344px;
+    height: 788px;
+    margin: 2214px 0 0 48px;
+    background: rgba(255, 255, 255, 0);
+    border-top: 4px dashed #000000;
+    border-bottom: 4px dashed #000000;
+    z-index: 2;
+}
+
+.path {
+    position: absolute;
+    width: 680px;
+    height: 585px;
+    top: 36px;
+    left: 34px;
+    background: url(../assets/images/e98d6f97-44e5-47f8-8377-75d47d08a169.png) no-repeat center;
+    background-size: cover;
+    z-index: 4;
+}
+
+.ourMission {
+    position: absolute;
+    width: 645px;
+    height: 441px;
+    top: 108px;
+    left: 112px;
+    font-family: Kulim Park, var(--default-font-family);
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 72.64px;
+    text-align: left;
+    z-index: 8;
+}
+
+.ourMissionD {
+    position: relative;
+    color: #000000;
+    font-family: Kulim Park, var(--default-font-family);
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 72.64px;
+    text-align: left;
+}
+
+.our {
+    position: relative;
+    color: #000000;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 72.64px;
+    text-align: left;
+}
+
+.ourE {
+    position: relative;
+    color: #000000;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 72.64px;
+    text-align: left;
+}
+
+.missionIsToInspireYouToTravelMore {
+    position: relative;
+    color: #000000;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 72.64px;
+    text-align: left;
+}
+
+.mapVectorArt {
+    position: absolute;
+    width: 461px;
+    height: 322px;
+    top: 229px;
+    left: 771px;
+    z-index: 5;
+    overflow: hidden;
+}
+
+.layer {
+    position: relative;
+    width: 461px;
+    height: 322px;
+    margin: 0 0 0 0;
+    z-index: 6;
+}
+
+.divG {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url(../assets/images/4ca08608-623f-408b-8453-d3eeaa8d5be2.png) no-repeat center;
+    background-size: 100% 100%;
+    z-index: 7;
+}
+
+.divPath {
+    position: absolute;
+    width: 508px;
+    height: 437px;
+    top: 281px;
+    left: 249px;
+    background: url(../assets/images/39fc19bf-6043-4d1a-a7a4-2c24f29b4648.png) no-repeat center;
+    background-size: cover;
+    z-index: 3;
+}
+
+.text {
+    position: absolute;
+    width: 1440px;
+    height: 670px;
+    top: 985px;
+    left: 0;
+    z-index: 9;
+    overflow: hidden;
+}
+
+.churchVectorArt {
+    position: absolute;
+    width: 1222.302px;
+    height: 782.447px;
+    top: -112px;
+    left: 76.893px;
+    background: url(../assets/images/b799604d-0838-4c4d-a62a-d8258b68d70f.png) no-repeat center;
+    background-size: cover;
+    filter: blur(5px);
+    z-index: 11;
+}
+
+.mountainSunriseWithPineForestVector {
+    position: absolute;
+    width: 1529px;
+    height: 723px;
+    top: -30px;
+    left: -44px;
+    background: url(../assets/images/f4029a46038ce027302617d26bd5478602b8d0e8.png) no-repeat center;
+    background-size: cover;
+    opacity: 0.3;
+    filter: blur(10px);
+    z-index: 12;
+}
+
+.background {
+    position: absolute;
+    width: 1438.003px;
+    height: 981.838px;
+    top: -14.528px;
+    left: 0;
+    background: #f2f0ed;
+    z-index: 10;
+}
+
+.rectangle15 {
+    position: absolute;
+    width: 531.013px;
+    height: 333.107px;
+    top: 99.816px;
+    left: 160.777px;
+    background: #121b3a;
+    z-index: 14;
+    border-radius: 0 40px 0 40px;
+}
+
+.bgTrek16 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 65.204px;
+    top: 135.725px;
+    left: 184.743px;
+    color: #ffffff;
+    font-family: Kulim Park, var(--default-font-family);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 54.48px;
+    text-align: left;
+    text-decoration: underline;
+    white-space: nowrap;
+    z-index: 16;
+}
+
+.rectangle17 {
+    position: absolute;
+    width: 513.037px;
+    height: 286.33px;
+    top: 190.534px;
+    left: 216.949px;
+    background: #10362f;
+    border: 8px dashed #ffffff;
+    z-index: 13;
+    border-radius: 0 40px 0 40px;
+    box-sizing: content-box;
+}
+
+.rectangle18 {
+    position: absolute;
+    width: 531.262px;
+    height: 223.807px;
+    top: 209.214px;
+    left: 160.777px;
+    background: url(../assets/images/2eb0ccd6-d935-4ce9-8587-98dbe4ccc48a.png) no-repeat center;
+    background-size: cover;
+    z-index: 15;
+    border-radius: 0 0 0 40px;
+}
+
+.weAreWebsite {
+    position: absolute;
+    width: 483.607px;
+    height: 223.807px;
+    top: 209.214px;
+    left: 184.604px;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    z-index: 17;
+}
+
+.we {
+    position: relative;
+    color: #ffffff;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+}
+
+.nbsp {
+    position: relative;
+    color: #ffffff;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 38.4px;
+    text-align: left;
+}
+
+.are {
+    position: relative;
+    color: #ffffff;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+}
+
+.nbsp19 {
+    position: relative;
+    color: #ffffff;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 38.4px;
+    text-align: left;
+}
+
+.are1a {
+    position: relative;
+    color: #ffffff;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+}
+
+.nbsp1b {
+    position: relative;
+    color: #ffffff;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 38.4px;
+    text-align: left;
+}
+
+.rectangle1c {
+    position: absolute;
+    width: 455px;
+    height: 97px;
+    top: 1606px;
+    left: 825px;
+    background: #ff6d4d;
+    border: 4px solid #000000;
+    z-index: 42;
+    box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.8);
+}
+
+.theTeam {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 455px;
+    height: 65px;
+    top: 12px;
+    left: -4px;
+    color: #ffffff;
+    font-family: Luam, var(--default-font-family);
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 62.656px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 43;
+}
+
+.background1d {
+    position: absolute;
+    width: 1440px;
+    height: 1502px;
+    top: 1655px;
+    left: 0;
+    background: url(../assets/images/d9418797-a418-4331-ae4f-fcb3d7a07a64.png) no-repeat center;
+    background-size: cover;
+    z-index: 19;
+}
+
+.frame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 64px;
+    position: absolute;
+    width: 1440px;
+    height: 1502px;
+    top: 0;
+    left: 0;
+    z-index: 20;
+}
+
+.employee {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 16px;
+    position: relative;
+    width: 1115px;
+    z-index: 21;
+}
+
+.defaultAvatarProfile {
+    flex-shrink: 0;
+    position: relative;
+    width: 359px;
+    height: 359px;
+    background: url(../assets/images/931c413572b79535948f8e6c59d637e2526270fa.png) no-repeat center;
+    background-size: cover;
+    z-index: 22;
+}
+
+.text1e {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 0;
+    gap: 32px;
+    position: relative;
+    min-width: 0;
+    z-index: 23;
+}
+
+.teodorAtanasov {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    width: 740px;
+    height: 73px;
+    color: #ffffff;
+    font-family: Kulim Park, var(--default-font-family);
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 72.64px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 24;
+}
+
+.programmerDesigner {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    width: 740px;
+    height: 54px;
+    color: #ffffff;
+    font-family: Kulim Park, var(--default-font-family);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 54px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 25;
+}
+
+.responsibleProgramming {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+    width: 740px;
+    height: 120px;
+    color: #ffffff;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: left;
+    z-index: 26;
+}
+
+.horizontalWhiteDottedLine {
+    flex-shrink: 0;
+    position: relative;
+    width: 1120px;
+    height: 4px;
+    background: url(../assets/images/db0c0025-a566-4201-91c0-bd954fa63c1f.png) no-repeat center;
+    background-size: cover;
+    z-index: 27;
+}
+
+.employee1f {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 16px;
+    position: relative;
+    width: 1115px;
+    z-index: 28;
+}
+
+.text20 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 32px;
+    position: relative;
+    width: 740px;
+    z-index: 29;
+}
+
+.tsvetelinaTsoneva {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    width: 740px;
+    height: 73px;
+    color: #ffffff;
+    font-family: Kulim Park, var(--default-font-family);
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 72.64px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 30;
+}
+
+.designerCoWriter {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    width: 740px;
+    height: 54px;
+    color: #ffffff;
+    font-family: Kulim Park, var(--default-font-family);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 54px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 31;
+}
+
+.responsibleDesigning {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+    width: 740px;
+    height: 80px;
+    color: #ffffff;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: left;
+    z-index: 32;
+}
+
+.defaultAvatarProfile21 {
+    flex-shrink: 0;
+    position: relative;
+    width: 359px;
+    height: 359px;
+    background: url(../assets/images/931c413572b79535948f8e6c59d637e2526270fa.png) no-repeat center;
+    background-size: cover;
+    z-index: 33;
+}
+
+.horizontalWhiteDottedLine22 {
+    flex-shrink: 0;
+    position: relative;
+    width: 1120px;
+    height: 4px;
+    background: url(../assets/images/368d0707-062e-478a-b81c-4c272033cc1b.png) no-repeat center;
+    background-size: cover;
+    z-index: 34;
+}
+
+.employee23 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 20px;
+    position: relative;
+    width: 1119px;
+    z-index: 35;
+}
+
+.defaultAvatarProfile24 {
+    flex-shrink: 0;
+    position: relative;
+    width: 359px;
+    height: 359px;
+    background: url(../assets/images/931c413572b79535948f8e6c59d637e2526270fa.png) no-repeat center;
+    background-size: cover;
+    z-index: 36;
+}
+
+.text25 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 32px;
+    position: relative;
+    width: 740px;
+    z-index: 37;
+}
+
+.rashideSelim {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    width: 740px;
+    height: 73px;
+    color: #ffffff;
+    font-family: Kulim Park, var(--default-font-family);
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 72.64px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 38;
+}
+
+.writerEditor {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    width: 740px;
+    height: 54px;
+    color: #ffffff;
+    font-family: Kulim Park, var(--default-font-family);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 54px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 39;
+}
+
+.responsibleWriting {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+    width: 740px;
+    height: 120px;
+    color: #ffffff;
+    font-family: Josefin Slab, var(--default-font-family);
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: left;
+    z-index: 40;
+}

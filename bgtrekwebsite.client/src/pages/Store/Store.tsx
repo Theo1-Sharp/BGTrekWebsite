@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
 import styles from "./Store.module.css";
+import { Accordion } from "react-bootstrap";
 
 export default function Main() {
   const [pageNumber, setPageNumber] = useState<number>(1);
@@ -7,14 +8,11 @@ export default function Main() {
 
   const onClickHandler = (
     event: React.MouseEvent<HTMLButtonElement>,
-    leftOrRight: boolean
+    newPageNumber: number
   ) => {
-    if (leftOrRight) {
-      setPageNumber(Math.min(10, pageNumber + 1));
-    } else {
-      // Ensure pageNumber doesn't go below 1
-      setPageNumber(Math.max(1, pageNumber - 1));
-    }
+    // Ensure newPageNumber is within the range [1, 10]
+    const adjustedPageNumber = Math.max(1, Math.min(10, newPageNumber));
+    setPageNumber(adjustedPageNumber);
   };
 
   return (
@@ -36,51 +34,78 @@ export default function Main() {
         <div className={styles.line} />
         <div className={styles.frame}>
           <div className={styles.frame1}>
-            <div className={styles.group}>
-              <button className={styles.sideButton}>
-                <span className={styles.sort2}>Sort</span>
-                <div className={styles.list} />
-              </button>
-              <div className={styles.subButtonContainer}>
-                <button className={styles.subButton}>Price</button>
-                <button className={styles.subButton}>Name</button>
-              </div>
-              <div className={styles.sideButtonContainer}>
-                <button className={styles.sideButton}>
-                  <span className={styles.filter3}>Filter</span>
-                  <div className={styles.filter4} />
-                </button>
-                <div className={styles.subButtonContainer}>
+            <Accordion className={styles.sideAccordion}>
+              <Accordion.Item
+                eventKey="0"
+                className={styles.sideButtonContainer}
+              >
+                <Accordion.Header>
+                  <div className={styles.sideButton}>
+                    <span className={styles.sort2}>Sort</span>
+                    <div className={styles.list} />
+                  </div>
+                </Accordion.Header>
+                <Accordion.Body>
                   <button className={styles.subButton}>Price</button>
-                </div>
-              </div>
-              <div className={styles.sideButtonContainer}>
-                <button className={styles.sideButton}>
-                  <span className={styles.categories6}>Categories</span>
-                  <div className={styles.category} />
-                </button>
-                <div className={styles.subButtonContainer}>
-                  <button className={styles.subButton}>All</button>
-                  <button className={styles.subButton}>Clothes</button>
-                  <button className={styles.subButton}>Magnets</button>
-                  <button className={styles.subButton}>Paintings</button>
-                  <button className={styles.subButton}>Pottery</button>
-                </div>
-              </div>
-            </div>
+                  <button className={styles.subButton}>Name</button>
+                </Accordion.Body>
+              </Accordion.Item>
+              <Accordion.Item
+                eventKey="1"
+                className={styles.sideButtonContainer}
+              >
+                <Accordion.Header>
+                  <div className={styles.sideButton}>
+                    <span className={styles.filter3}>Filter</span>
+                    <div className={styles.filter4} />
+                  </div>
+                </Accordion.Header>
+                <Accordion.Body>
+                  <div className={styles.subButtonContainer}>
+                    <button className={styles.subButton}>Price</button>
+                  </div>
+                </Accordion.Body>
+              </Accordion.Item>
+              <Accordion.Item
+                eventKey="2"
+                className={styles.sideButtonContainer}
+              >
+                <Accordion.Header>
+                  <div className={styles.sideButton}>
+                    <span className={styles.categories6}>Categories</span>
+                    <div className={styles.category} />
+                  </div>
+                </Accordion.Header>
+                <Accordion.Body>
+                  <div className={styles.subButtonContainer}>
+                    <button className={styles.subButton}>All</button>
+                    <button className={styles.subButton}>Clothes</button>
+                    <button className={styles.subButton}>Magnets</button>
+                    <button className={styles.subButton}>Paintings</button>
+                    <button className={styles.subButton}>Pottery</button>
+                  </div>
+                </Accordion.Body>
+              </Accordion.Item>
+            </Accordion>
+
             <div className={styles.frameC}>
               <button
                 className={styles.pagesButton}
-                onClick={(e) => onClickHandler(e, false)}
+                onClick={(e) => onClickHandler(e, pageNumber - 1)}
               >
                 <div className={styles.arrowLeft} />
               </button>
-              <p className={styles.text17} ref={numberRef}>
-                {pageNumber}
-              </p>
+              <input
+                type="text"
+                className={styles.pageNumber}
+                ref={numberRef}
+                value={pageNumber}
+                onChange={(e) => setPageNumber(Number(e.target.value))}
+                size={pageNumber.toString().length || 1}
+              />
               <button
                 className={styles.pagesButton}
-                onClick={(e) => onClickHandler(e, true)}
+                onClick={(e) => onClickHandler(e, pageNumber + 1)}
               >
                 <div className={styles.arrowRight} />
               </button>
@@ -97,7 +122,9 @@ export default function Main() {
                     <div className={styles.productImage} />
                     <p className={styles.productName}>Short Sleeved T-Shirt</p>
                     <p className={styles.productPrice}>29.99 BGN</p>
-                    <button className={styles.buyButton}>Add To Cart</button>
+                    <a className={styles.buyButton} href="/cart">
+                      Add To Cart
+                    </a>
                   </div>
                 ))}
               </div>
