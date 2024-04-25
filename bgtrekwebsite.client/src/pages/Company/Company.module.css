@@ -1,5 +1,11 @@
 .mainContainer {
     overflow: hidden;
+
+    --images-background: url("/src/assets/images/pages/company/HD-wallpaper-mountains-landscape-nature-art-vector\ 1.png");
+    --images-blue-rectangle-1: url("/src/assets/images/pages/company/Blue_Rectangle_1.png");
+    --images-blue-rectangle-2: url("/src/assets/images/pages/company/Blue_Rectangle_2.png");
+    --images-red-rectangle-1: url("/src/assets/images/pages/company/Red_Rectangle_1.png");
+    --images-red-rectangle-2: url("/src/assets/images/pages/company/Red_Rectangle_2.png");
 }
 
 .mainContainer,
@@ -365,26 +371,28 @@ button {
     overflow: hidden;
 }
 
-.blueRectangle {
+.blueRectangle1 {
     position: absolute;
-    width: 1482.065px;
-    height: 1418.645px;
-    top: -1110px;
-    left: -106px;
-    background: url(../assets/images/3b6cc0cb-b84d-4a47-8aa8-82228a9eabcf.png) no-repeat center;
-    background-size: cover;
+    width: 1221px;
+    height: 844.85px;
+    top: -950px;
+    left: 0;
+    background: linear-gradient(180deg, rgba(18, 27, 58, 0.8) 75%, rgba(3, 95, 85, 0.8) 100%);
     z-index: 49;
+    transform: rotate(-45deg);
 }
 
-.redRectangle {
+.redRectangle1 {
     position: absolute;
-    width: 1482.065px;
-    height: 1418.645px;
-    top: -765px;
-    left: -740px;
-    background: url(../assets/images/afe82aad-9f50-4c8e-b880-5ecb0f065f6a.png) no-repeat center;
+    width: 1221px;
+    height: 844.85px;
+    top: -700px;
+    left: -500px;
+    background: linear-gradient(180deg, rgba(255, 195, 40, 0.8) 50%, rgba(255, 48, 48, 0.8) 100%);
+    background-size: auto;
     background-size: cover;
     z-index: 48;
+    transform: rotate(-45deg);
 }
 
 .hdWallpaperMountains {
@@ -393,42 +401,25 @@ button {
     height: 1154px;
     top: -164px;
     left: -50px;
-    background: url(../assets/images/ecb2cc1144c7a94993c115b8eb79629b89b4000a.png) no-repeat center;
+    background: var(--images-background) no-repeat center;
     background-size: cover;
     opacity: 0.7;
     filter: blur(15px);
     z-index: 47;
 }
 
-.rectangle1 {
+.redRectangle2 {
     position: absolute;
-    width: 1440px;
-    height: 887px;
-    top: 0;
-    left: 0;
-    background: #f2f0ed;
-    z-index: 45;
-}
-
-.rectangle2 {
-    position: absolute;
-    width: 1440px;
-    height: 887px;
-    top: 0;
-    left: 0;
-    background: #f2f0ed;
-    z-index: 46;
-}
-
-.redRectangle3 {
-    position: absolute;
-    width: 1482.065px;
-    height: 1418.645px;
-    top: 248px;
-    left: 854px;
-    background: url(../assets/images/81540203-eccb-4066-9dcd-fbd72ebffc09.png) no-repeat center;
+    width: 1221px;
+    height: 844.85px;
+    top: 750px;
+    left: 700px;
+    background: linear-gradient(180deg, rgba(255, 195, 40, 0.8) 0%, rgba(255, 48, 48, 0.8) 50%);
+    background-size: auto;
+    background-size: auto;
     background-size: cover;
     z-index: 51;
+    transform: rotate(-45deg);
 }
 
 .slogan4 {
@@ -565,15 +556,19 @@ button {
     box-shadow: 10px 10px 0 0 rgba(0, 0, 0, 0.7);
 }
 
-.blueRectangleB {
+.blueRectangle2 {
     position: absolute;
     width: 569.272px;
     height: 520.821px;
-    top: 695px;
-    left: 579px;
-    background: url(../assets/images/342ffcbd-e097-48cb-8d33-87c0efedc28e.png) no-repeat center;
+    bottom: -450px;
+    right: 150px;
+    background: linear-gradient(0, rgba(18, 27, 58, 0.8) 75%, rgba(3, 95, 85, 0.8) 100%);
+    background-size: auto;
+    background-size: auto;
+    background-size: auto;
     background-size: cover;
     z-index: 50;
+    transform: rotate(-45deg);
 }
 
 .rectangleC {

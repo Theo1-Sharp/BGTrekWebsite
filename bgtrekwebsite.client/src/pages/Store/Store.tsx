@@ -1,17 +1,94 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import styles from "./Store.module.css";
 import { Accordion } from "react-bootstrap";
+
+interface Product {
+  name: string;
+  price: number;
+}
 
 export default function Main() {
   const [pageNumber, setPageNumber] = useState<number>(1);
   const numberRef = useRef(null);
 
+  const [products, setProducts] = useState<Product[]>();
+
+  // Mocking products fetch
+  useEffect(() => {
+    // Mocked products data
+    const mockedProducts: Product[] = [
+      { name: "Short Sleeved T-Shirt", price: 29.99 },
+      { name: "Short Sleeved T-Shirt", price: 29.99 },
+      { name: "Short Sleeved T-Shirt", price: 29.99 },
+      { name: "Short Sleeved T-Shirt", price: 29.99 },
+      { name: "Short Sleeved T-Shirt", price: 29.99 },
+      { name: "Short Sleeved T-Shirt", price: 29.99 },
+      { name: "Short Sleeved T-Shirt", price: 29.99 },
+      { name: "Short Sleeved T-Shirt", price: 29.99 },
+      { name: "Short Sleeved T-Shirt", price: 29.99 },
+
+      // Add more products here
+    ];
+    setProducts(mockedProducts);
+  }, []);
+
+  // useEffect(() => {
+  //   populateProductsData();
+  // }, []);
+
+  async function populateProductsData() {
+    const response = await fetch("/api/products");
+    const data = await response.json();
+    setProducts(data);
+  }
+
+  const renderProducts = (pageNumber: number) => {
+    const productsPerPage = 8; // 2 rows * 4 products per row
+    const startIndex = (pageNumber - 1) * productsPerPage;
+    const endIndex = startIndex + productsPerPage;
+
+    const rows = [];
+    if (products !== undefined) {
+      const productsToShow = products.slice(startIndex, endIndex);
+      for (let i = 0; i < productsToShow.length; i += 4) {
+        const rowProducts = productsToShow.slice(i, i + 4);
+        rows.push(
+          <div className={styles.row} key={`row-${i / 4}`}>
+            {rowProducts.map((product, index) => (
+              <div
+                className={styles.productContainer}
+                key={`container-${startIndex + i + index}`}
+              >
+                <div className={styles.productImage} />
+                <p className={styles.productName}>{product.name}</p>
+                <p className={styles.productPrice}>
+                  {product.price.toFixed(2)} BGN
+                </p>
+                <a className={styles.buyButton} href="/cart">
+                  Add To Cart
+                </a>
+              </div>
+            ))}
+          </div>
+        );
+      }
+    }
+
+    return rows;
+  };
+
   const onClickHandler = (
     event: React.MouseEvent<HTMLButtonElement>,
     newPageNumber: number
   ) => {
-    // Ensure newPageNumber is within the range [1, 10]
-    const adjustedPageNumber = Math.max(1, Math.min(10, newPageNumber));
+    // Calculate the maximum page number based on the number of products available
+    const maxPageNumber = Math.ceil(products ? products.length : 0 / 8);
+
+    // Ensure newPageNumber is within the range [1, maxPageNumber]
+    const adjustedPageNumber = Math.max(
+      1,
+      Math.min(maxPageNumber, newPageNumber)
+    );
     setPageNumber(adjustedPageNumber);
   };
 
@@ -112,23 +189,7 @@ export default function Main() {
             </div>
           </div>
           <div className={styles.productsContainer}>
-            {Array.from({ length: 2 }).map((_, rowIndex) => (
-              <div className={styles.row} key={`row-${rowIndex}`}>
-                {Array.from({ length: 4 }).map((_, elementIndex) => (
-                  <div
-                    className={styles.productContainer}
-                    key={`container-${rowIndex}-${elementIndex}`}
-                  >
-                    <div className={styles.productImage} />
-                    <p className={styles.productName}>Short Sleeved T-Shirt</p>
-                    <p className={styles.productPrice}>29.99 BGN</p>
-                    <a className={styles.buyButton} href="/cart">
-                      Add To Cart
-                    </a>
-                  </div>
-                ))}
-              </div>
-            ))}
+            {renderProducts(pageNumber)}
           </div>
         </div>
       </div>

@@ -15,6 +15,12 @@ function App() {
     populateWeatherData();
   }, []);
 
+  async function populateWeatherData() {
+    const response = await fetch("/api/weatherforecast");
+    const data = await response.json();
+    setForecasts(data);
+  }
+
   const contents =
     forecasts === undefined ? (
       <p>
@@ -56,12 +62,6 @@ function App() {
       {contents}
     </div>
   );
-
-  async function populateWeatherData() {
-    const response = await fetch("/api/weatherforecast");
-    const data = await response.json();
-    setForecasts(data);
-  }
 }
 
 export default App;

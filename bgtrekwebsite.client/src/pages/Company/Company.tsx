@@ -1,16 +1,16 @@
 import React from "react";
 import styles from "./Company.module.css";
 
+import rectangle_blue_1 from "@src/assets/images/pages/company/HD-wallpaper-mountains-landscape-nature-art-vector 1.png";
+
 export default function Main() {
   return (
     <div className={styles.mainContainer}>
       <div className={styles.slogan}>
-        <div className={styles.blueRectangle} />
-        <div className={styles.redRectangle} />
+        <div className={styles.blueRectangle1} />
+        <div className={styles.redRectangle1} />
         <div className={styles.hdWallpaperMountains} />
-        <div className={styles.rectangle1} />
-        <div className={styles.rectangle2} />
-        <div className={styles.redRectangle3} />
+        <div className={styles.redRectangle2} />
         <div className={styles.slogan4}>
           <button className={styles.travelToBulgaria}>
             <span className={styles.travel}>“Travel to </span>
@@ -26,7 +26,7 @@ export default function Main() {
           </button>
           <div className={styles.rectangleA} />
         </div>
-        <div className={styles.blueRectangleB} />
+        <div className={styles.blueRectangle2} />
       </div>
       <div className={styles.rectangleC}>
         <div className={styles.path} />
