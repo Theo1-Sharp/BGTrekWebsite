@@ -63,15 +63,15 @@ export default function Location() {
               <div className={styles.rating}>
                 {Array.from({ length: 5 }).map((_, elementIndex) =>
                   elementIndex < 3 ? (
-                    <img
+                    <div
                       className={`${styles.star} ${styles.starOn}`}
                       key={elementIndex}
-                    ></img>
+                    ></div>
                   ) : (
-                    <img
+                    <div
                       className={`${styles.star} ${styles.starOff}`}
                       key={elementIndex}
-                    ></img>
+                    ></div>
                   )
                 )}
               </div>
