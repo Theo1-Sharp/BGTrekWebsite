@@ -82,7 +82,8 @@ export default function Main() {
     newPageNumber: number
   ) => {
     // Calculate the maximum page number based on the number of products available
-    const maxPageNumber = Math.ceil(products ? products.length : 0 / 8);
+    const maxPageNumber = Math.ceil(products ? products.length / 8 : 0);
+    console.log(maxPageNumber);
 
     // Ensure newPageNumber is within the range [1, maxPageNumber]
     const adjustedPageNumber = Math.max(
