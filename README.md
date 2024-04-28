@@ -25,6 +25,10 @@ This project uses the following technologies:
     * Top-level packages:
       - Microsoft.AspNetCore.SpaProxy
       - Swashbuckle.AspNetCore
+      - Microsoft.EntityFrameworkCore
+      - Microsoft.EntityFrameworkCore.Tools
+      - MySql.Data
+      - MySql.EntityFrameworkCore
 
 ## TO DO
 
