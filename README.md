@@ -29,6 +29,7 @@ This project uses the following technologies:
       - Microsoft.EntityFrameworkCore.Tools
       - MySql.Data
       - MySql.EntityFrameworkCore
+      - System.Drawing.Common
 
 ## TO DO
 
